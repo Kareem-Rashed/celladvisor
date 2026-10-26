@@ -4,6 +4,8 @@
 PDK_ROOT ?= $(HOME)/.ciel
 GIVEN    ?= ../DD2_Project1_student_pack/given
 IN       ?=
+HD_LIB ?= pdk/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+export HD_LIB
 
 .PHONY: setup check test all demo clean
 
@@ -24,6 +26,7 @@ check:            ## tool versions, PDK, and the ngspice stress test for Option 
 
 test:             ## every test, including the broken cases in tests/broken/
 	python3 tests/test_canon.py
+	python3 tests/test_hdlib.py
 
 all:              ## the whole flow
 	@echo "not written yet" && exit 1
@@ -34,3 +37,7 @@ demo:             ## what the interview runs: make demo IN=<request or design>
 
 clean:
 	rm -rf build
+
+hd-table:
+	python3 src/hdlib.py $(HD_LIB) results/hd_classes.csv
+
