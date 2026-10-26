@@ -23,7 +23,7 @@ check:            ## tool versions, PDK, and the ngspice stress test for Option 
 	@echo "add the rest of your checks here" && exit 1
 
 test:             ## every test, including the broken cases in tests/broken/
-	@echo "not written yet" && exit 1
+	python3 tests/test_canon.py
 
 all:              ## the whole flow
 	@echo "not written yet" && exit 1
