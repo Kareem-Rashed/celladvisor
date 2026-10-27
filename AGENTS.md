@@ -38,3 +38,7 @@ celladvisor is our tool for DD2 Project 1, Option 2 (CSCE 3304, Fall 2026). It r
 - Python 3.11, standard library first; any new dependency goes in `requirements.txt`.
 - Each group member commits under their own name. Every AI-assisted commit ends with the trailer `AI-assisted: <tool>/<model>`.
 - Every AI interaction whose output we kept is logged in `ai/use_log.md`, and every AI mistake our checks caught is logged in `ai/mistakes_log.md`.
+
+## Current layout (added 2026-10-27, Joshua)
+- The code lives directly in `src/` (for example `src/canon.py`), not in `src/celladvisor/` as the Conventions section above says. Follow the repository as it is.
+- Before calling or writing another member's module, read `docs/interfaces.md`: it lists every public function, its owner, the shared truth-table convention, and the interfaces the existing broken-case tests expect (`redundancy.classify`, `cuts.verify_cut`). Update it when you add or change a public function.

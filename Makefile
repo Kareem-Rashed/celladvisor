@@ -27,6 +27,9 @@ check:            ## tool versions, PDK, and the ngspice stress test for Option 
 test:             ## every test, including the broken cases in tests/broken/
 	python3 tests/test_canon.py
 	python3 tests/test_hdlib.py
+	python3 tests/test_contained.py
+	python3 tests/test_cut_check.py
+	python3 tests/test_redundancy_check.py
 
 all:              ## the whole flow
 	@echo "not written yet" && exit 1
@@ -40,4 +43,7 @@ clean:
 
 hd-table:
 	python3 src/hdlib.py $(HD_LIB) results/hd_classes.csv
+
+contained-table:
+	python3 src/contained.py $(HD_LIB) results/contained_table.csv	
 
