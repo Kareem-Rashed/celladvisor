@@ -28,6 +28,7 @@ test:             ## every test, including the broken cases in tests/broken/
 	python3 tests/test_canon.py
 	python3 tests/test_hdlib.py
 	python3 tests/test_contained.py
+	python3 tests/test_cuts.py
 	python3 tests/test_cut_check.py
 	python3 tests/test_redundancy_check.py
 
