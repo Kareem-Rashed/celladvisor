@@ -31,6 +31,7 @@ test:             ## every test, including the broken cases in tests/broken/
 	python3 tests/test_cuts.py
 	python3 tests/test_cut_check.py
 	python3 tests/test_redundancy_check.py
+	python3 tests/test_table4.py
 
 all:              ## the whole flow
 	@echo "not written yet" && exit 1
