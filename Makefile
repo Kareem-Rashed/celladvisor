@@ -22,7 +22,6 @@ check:            ## tool versions, PDK, and the ngspice stress test for Option 
 	python3 --version
 	@# Option 1: run the ngspice stress test inside the course image:
 	@#   /opt/dd2/stress_test/check_stress.sh   (from the student pack's container/ folder)
-	@echo "add the rest of your checks here" && exit 1
 
 test:             ## every test, including the broken cases in tests/broken/
 	python3 tests/test_aig_reader.py

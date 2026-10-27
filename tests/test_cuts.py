@@ -5,6 +5,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
 
 from aig_reader import read_aag
 from cutter import remove_dominated, combine, enumerate_cuts
+from cuts import cut_truth_table
+
 
 # a, b, c, d = vars 1-4;  n1 = a & b (5);  n2 = c & !d (6);  y = !n1 & !n2 (7)
 TINY = """aag 7 4 0 1 3
@@ -75,6 +77,21 @@ def test_dominated_cut_removed():
     # {a,b,c,x} = {1,2,3,4} is dominated by {c,x} = {3,4}
     assert cut(1, 2, 3, 4) not in cuts[6]
     assert set(cuts[6]) == {cut(6), cut(4, 5), cut(3, 4), cut(1, 2, 5), cut(1, 2, 3)}
+
+
+def test_cut_truth_tables():
+    # every cut of gate 7, simulated, against truth tables traced by hand
+    sources, ands = read_aag(TINY)
+    cuts = enumerate_cuts(sources, ands)
+    expected = {
+        cut(5, 6): 0x1111,         # !n1 & !n2
+        cut(1, 2, 6): 0x0707,      # !(a&b) & !n2
+        cut(3, 4, 5): 0x0D0D,      # !(c&!d) & !n1
+        cut(1, 2, 3, 4): 0x7707,   # !(a&b) & !(c&!d)
+    }
+    for c in cuts[7]:
+        if c != cut(7):
+            assert cut_truth_table(ands, 7, sorted(c)) == expected[c]
 
 
 if __name__ == "__main__":
