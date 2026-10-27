@@ -7,7 +7,7 @@ IN       ?=
 HD_LIB ?= pdk/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 export HD_LIB
 
-.PHONY: setup check test all demo clean
+.PHONY: setup check test all demo clean aigs table1 hd-table contained-table
 
 setup:            ## environment, and links to the PDK and the given files
 	ln -sfn $(PDK_ROOT)/sky130A pdk
@@ -25,6 +25,7 @@ check:            ## tool versions, PDK, and the ngspice stress test for Option 
 	@echo "add the rest of your checks here" && exit 1
 
 test:             ## every test, including the broken cases in tests/broken/
+	python3 tests/test_aig_reader.py
 	python3 tests/test_canon.py
 	python3 tests/test_hdlib.py
 	python3 tests/test_contained.py
@@ -33,8 +34,13 @@ test:             ## every test, including the broken cases in tests/broken/
 	python3 tests/test_redundancy_check.py
 	python3 tests/test_table4.py
 
-all:              ## the whole flow
-	@echo "not written yet" && exit 1
+all: aigs table1 hd-table contained-table   ## the flow so far, one target per step
+
+aigs:             ## step 1: AIGs of every required design, raw / strash / after ABC
+	bash scripts/aigs.sh
+
+table1:           ## handout Table 1: areas on the usable and reduced libraries
+	bash scripts/table1.sh
 
 demo:             ## what the interview runs: make demo IN=<request or design>
 	@test -n "$(IN)" || (echo "usage: make demo IN=<request or design>" && exit 1)

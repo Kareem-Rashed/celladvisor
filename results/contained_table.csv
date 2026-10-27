@@ -1,0 +1,1351 @@
+tt_hex,cell,area_um2,wiring
+0000,sky130_fd_sc_hd__buf_1,3.7536,A=0
+0001,sky130_fd_sc_hd__nor4_1,6.256,A=A B=B C=C D=D
+0002,sky130_fd_sc_hd__nor4b_1,8.7584,A=B B=C C=D D_N=A
+0003,sky130_fd_sc_hd__nor3_1,5.0048,A=B B=C C=D
+0004,sky130_fd_sc_hd__nor4b_1,8.7584,A=A B=C C=D D_N=B
+0005,sky130_fd_sc_hd__nor3_1,5.0048,A=A B=C C=D
+0007,sky130_fd_sc_hd__a211oi_1,7.5072,A1=A A2=B B1=C C1=D
+0008,sky130_fd_sc_hd__nor4bb_1,10.0096,A=C B=D C_N=A D_N=B
+000a,sky130_fd_sc_hd__nor3b_1,7.5072,A=C B=D C_N=A
+000c,sky130_fd_sc_hd__nor3b_1,7.5072,A=C B=D C_N=B
+000f,sky130_fd_sc_hd__nor2_1,3.7536,A=C B=D
+0010,sky130_fd_sc_hd__nor4b_1,8.7584,A=A B=B C=D D_N=C
+0011,sky130_fd_sc_hd__nor3_1,5.0048,A=A B=B C=D
+0013,sky130_fd_sc_hd__a211oi_1,7.5072,A1=A A2=C B1=B C1=D
+0015,sky130_fd_sc_hd__a211oi_1,7.5072,A1=B A2=C B1=A C1=D
+001f,sky130_fd_sc_hd__a221oi_1,8.7584,A1=A A2=C B1=B B2=C C1=D
+0020,sky130_fd_sc_hd__nor4bb_1,10.0096,A=B B=D C_N=A D_N=C
+0022,sky130_fd_sc_hd__nor3b_1,7.5072,A=B B=D C_N=A
+0030,sky130_fd_sc_hd__nor3b_1,7.5072,A=B B=D C_N=C
+0033,sky130_fd_sc_hd__nor2_1,3.7536,A=B B=D
+0037,sky130_fd_sc_hd__a221oi_1,8.7584,A1=A A2=B B1=B B2=C C1=D
+003f,sky130_fd_sc_hd__a21oi_1,5.0048,A1=B A2=C B1=D
+0040,sky130_fd_sc_hd__nor4bb_1,10.0096,A=A B=D C_N=B D_N=C
+0044,sky130_fd_sc_hd__nor3b_1,7.5072,A=A B=D C_N=B
+0050,sky130_fd_sc_hd__nor3b_1,7.5072,A=A B=D C_N=C
+0055,sky130_fd_sc_hd__nor2_1,3.7536,A=A B=D
+0057,sky130_fd_sc_hd__a221oi_1,8.7584,A1=A A2=B B1=A B2=C C1=D
+005f,sky130_fd_sc_hd__a21oi_1,5.0048,A1=A A2=C B1=D
+0077,sky130_fd_sc_hd__a21oi_1,5.0048,A1=A A2=B B1=D
+007f,sky130_fd_sc_hd__a31oi_1,6.256,A1=A A2=B A3=C B1=D
+0080,sky130_fd_sc_hd__and4b_1,10.0096,A_N=D B=A C=B D=C
+0088,sky130_fd_sc_hd__and3b_1,8.7584,A_N=D B=A C=B
+00a0,sky130_fd_sc_hd__and3b_1,8.7584,A_N=D B=A C=C
+00aa,sky130_fd_sc_hd__nor2b_1,6.256,A=D B_N=A
+00ac,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=C A3=0 S0=C S1=D
+00af,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=C A3=0 S0=C S1=D
+00b8,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=B A3=0 S0=B S1=D
+00bb,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=B A3=0 S0=B S1=D
+00c0,sky130_fd_sc_hd__and3b_1,8.7584,A_N=D B=B C=C
+00ca,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=C A3=0 S0=C S1=D
+00cc,sky130_fd_sc_hd__nor2b_1,6.256,A=D B_N=B
+00cf,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=C A3=0 S0=C S1=D
+00d8,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=B A3=0 S0=D S1=A
+00dd,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=B A3=0 S0=D S1=A
+00e2,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=C A3=0 S0=D S1=B
+00e4,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=C A3=0 S0=D S1=A
+00ee,sky130_fd_sc_hd__a2bb2oi_1,8.7584,A1_N=A A2_N=B B1=D B2=D
+00f0,sky130_fd_sc_hd__nor2b_1,6.256,A=D B_N=C
+00f3,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=C A3=0 S0=D S1=B
+00f5,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=C A3=0 S0=D S1=A
+00fa,sky130_fd_sc_hd__a2bb2oi_1,8.7584,A1_N=A A2_N=C B1=D B2=D
+00fc,sky130_fd_sc_hd__a2bb2oi_1,8.7584,A1_N=B A2_N=C B1=D B2=D
+00ff,sky130_fd_sc_hd__clkinv_1,3.7536,A=D
+0100,sky130_fd_sc_hd__nor4b_1,8.7584,A=A B=B C=C D_N=D
+0101,sky130_fd_sc_hd__nor3_1,5.0048,A=A B=B C=C
+0103,sky130_fd_sc_hd__a211oi_1,7.5072,A1=A A2=D B1=B C1=C
+0105,sky130_fd_sc_hd__a211oi_1,7.5072,A1=B A2=D B1=A C1=C
+010f,sky130_fd_sc_hd__a221oi_1,8.7584,A1=A A2=D B1=B B2=D C1=C
+0111,sky130_fd_sc_hd__a211oi_1,7.5072,A1=C A2=D B1=A C1=B
+0133,sky130_fd_sc_hd__a221oi_1,8.7584,A1=A A2=D B1=C B2=D C1=B
+0155,sky130_fd_sc_hd__a221oi_1,8.7584,A1=B A2=D B1=C B2=D C1=A
+01ff,sky130_fd_sc_hd__o31ai_1,7.5072,A1=A A2=B A3=C B1=D
+0200,sky130_fd_sc_hd__nor4bb_1,10.0096,A=B B=C C_N=A D_N=D
+0202,sky130_fd_sc_hd__nor3b_1,7.5072,A=B B=C C_N=A
+0300,sky130_fd_sc_hd__nor3b_1,7.5072,A=B B=C C_N=D
+0303,sky130_fd_sc_hd__nor2_1,3.7536,A=B B=C
+0307,sky130_fd_sc_hd__a221oi_1,8.7584,A1=A A2=B B1=B B2=D C1=C
+030f,sky130_fd_sc_hd__a21oi_1,5.0048,A1=B A2=D B1=C
+0313,sky130_fd_sc_hd__a221oi_1,8.7584,A1=A A2=C B1=C B2=D C1=B
+0333,sky130_fd_sc_hd__a21oi_1,5.0048,A1=C A2=D B1=B
+033f,sky130_fd_sc_hd__a222oi_1,10.0096,A1=B A2=C B1=B B2=D C1=C C2=D
+0357,sky130_fd_sc_hd__o22ai_1,6.256,A1=A A2=D B1=B B2=C
+035f,sky130_fd_sc_hd__a222oi_1,10.0096,A1=A A2=C B1=B B2=D C1=C C2=D
+0377,sky130_fd_sc_hd__a222oi_1,10.0096,A1=A A2=B B1=B B2=D C1=C C2=D
+03cf,sky130_fd_sc_hd__mux2i_1,10.0096,A0=C A1=D S=B
+03f3,sky130_fd_sc_hd__mux2i_1,10.0096,A0=B A1=D S=C
+03ff,sky130_fd_sc_hd__o21ai_0,5.0048,A1=B A2=C B1=D
+0400,sky130_fd_sc_hd__nor4bb_1,10.0096,A=A B=C C_N=B D_N=D
+0404,sky130_fd_sc_hd__nor3b_1,7.5072,A=A B=C C_N=B
+0500,sky130_fd_sc_hd__nor3b_1,7.5072,A=A B=C C_N=D
+0505,sky130_fd_sc_hd__nor2_1,3.7536,A=A B=C
+0507,sky130_fd_sc_hd__a221oi_1,8.7584,A1=A A2=B B1=A B2=D C1=C
+050f,sky130_fd_sc_hd__a21oi_1,5.0048,A1=A A2=D B1=C
+0515,sky130_fd_sc_hd__a221oi_1,8.7584,A1=B A2=C B1=C B2=D C1=A
+0537,sky130_fd_sc_hd__o22ai_1,6.256,A1=A A2=C B1=B B2=D
+053f,sky130_fd_sc_hd__a222oi_1,10.0096,A1=A A2=D B1=B B2=C C1=C C2=D
+0555,sky130_fd_sc_hd__a21oi_1,5.0048,A1=C A2=D B1=A
+055f,sky130_fd_sc_hd__a222oi_1,10.0096,A1=A A2=C B1=A B2=D C1=C C2=D
+0577,sky130_fd_sc_hd__a222oi_1,10.0096,A1=A A2=B B1=A B2=D C1=C C2=D
+05af,sky130_fd_sc_hd__mux2i_1,10.0096,A0=C A1=D S=A
+05f5,sky130_fd_sc_hd__mux2i_1,10.0096,A0=A A1=D S=C
+05ff,sky130_fd_sc_hd__o21ai_0,5.0048,A1=A A2=C B1=D
+0707,sky130_fd_sc_hd__a21oi_1,5.0048,A1=A A2=B B1=C
+070f,sky130_fd_sc_hd__a31oi_1,6.256,A1=A A2=B A3=D B1=C
+0737,sky130_fd_sc_hd__a222oi_1,10.0096,A1=A A2=B B1=B B2=C C1=C C2=D
+0757,sky130_fd_sc_hd__a222oi_1,10.0096,A1=A A2=B B1=A B2=C C1=C C2=D
+0777,sky130_fd_sc_hd__a22oi_1,7.5072,A1=A A2=B B1=C B2=D
+07ff,sky130_fd_sc_hd__a32oi_1,8.7584,A1=A A2=B A3=D B1=C B2=D
+0800,sky130_fd_sc_hd__and4b_1,10.0096,A_N=C B=A C=B D=D
+0808,sky130_fd_sc_hd__and3b_1,8.7584,A_N=C B=A C=B
+0a00,sky130_fd_sc_hd__and3b_1,8.7584,A_N=C B=A C=D
+0a0a,sky130_fd_sc_hd__nor2b_1,6.256,A=C B_N=A
+0a0c,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=D A3=0 S0=D S1=C
+0a0f,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=D A3=0 S0=D S1=C
+0a5f,sky130_fd_sc_hd__mux2i_1,10.0096,A0=D A1=C S=A
+0aa0,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=A A3=0 S0=C S1=D
+0aaa,sky130_fd_sc_hd__a21boi_0,7.5072,A1=C A2=D B1_N=A
+0aac,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=A A3=0 S0=C S1=D
+0aaf,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=A A3=0 S0=C S1=D
+0ac0,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=B A3=0 S0=D S1=C
+0aca,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=A A2=B A3=0 S0=D S1=C
+0acc,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=B A3=0 S0=D S1=C
+0acf,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=B A3=0 S0=D S1=C
+0af0,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=C A3=0 S0=D S1=C
+0afa,sky130_fd_sc_hd__a2bb2oi_1,8.7584,A1_N=A A2_N=C B1=C B2=D
+0afc,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=C A3=0 S0=D S1=C
+0aff,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=C A3=0 S0=D S1=C
+0b08,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=A A2=B A3=0 S0=B S1=C
+0b0b,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=B A3=0 S0=B S1=C
+0c00,sky130_fd_sc_hd__and3b_1,8.7584,A_N=C B=B C=D
+0c0a,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=D A3=0 S0=D S1=C
+0c0c,sky130_fd_sc_hd__nor2b_1,6.256,A=C B_N=B
+0c0f,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=D A3=0 S0=D S1=C
+0c3f,sky130_fd_sc_hd__mux2i_1,10.0096,A0=D A1=C S=B
+0ca0,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=B A3=0 S0=C S1=D
+0caa,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=A A2=B A3=0 S0=C S1=D
+0cac,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=B A3=0 S0=C S1=D
+0caf,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=B A3=0 S0=C S1=D
+0cc0,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=B A2=B A3=0 S0=C S1=D
+0cca,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=B A3=0 S0=C S1=D
+0ccc,sky130_fd_sc_hd__a21boi_0,7.5072,A1=C A2=D B1_N=B
+0ccf,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=B A3=0 S0=C S1=D
+0cf0,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=B A2=C A3=0 S0=D S1=C
+0cfa,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=C A3=0 S0=D S1=C
+0cfc,sky130_fd_sc_hd__a2bb2oi_1,8.7584,A1_N=B A2_N=C B1=C B2=D
+0cff,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=C A3=0 S0=D S1=C
+0d08,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=A A2=B A3=0 S0=C S1=A
+0d0d,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=B A3=0 S0=C S1=A
+0e02,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=D A3=0 S0=C S1=B
+0e04,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=D A3=0 S0=C S1=A
+0e0e,sky130_fd_sc_hd__a2bb2oi_1,8.7584,A1_N=A A2_N=B B1=C B2=C
+0eee,sky130_fd_sc_hd__a2bb2oi_1,8.7584,A1_N=A A2_N=B B1=C B2=D
+0f00,sky130_fd_sc_hd__nor2b_1,6.256,A=C B_N=D
+0f03,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=D A3=0 S0=C S1=B
+0f05,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=D A3=0 S0=C S1=A
+0f0a,sky130_fd_sc_hd__a2bb2oi_1,8.7584,A1_N=A A2_N=D B1=C B2=C
+0f0c,sky130_fd_sc_hd__a2bb2oi_1,8.7584,A1_N=B A2_N=D B1=C B2=C
+0f0f,sky130_fd_sc_hd__clkinv_1,3.7536,A=C
+0f1f,sky130_fd_sc_hd__o31ai_1,7.5072,A1=A A2=B A3=D B1=C
+0f33,sky130_fd_sc_hd__mux2i_1,10.0096,A0=B A1=C S=D
+0f3f,sky130_fd_sc_hd__o21ai_0,5.0048,A1=B A2=D B1=C
+0f55,sky130_fd_sc_hd__mux2i_1,10.0096,A0=A A1=C S=D
+0f5f,sky130_fd_sc_hd__o21ai_0,5.0048,A1=A A2=D B1=C
+0f7f,sky130_fd_sc_hd__a32oi_1,8.7584,A1=A A2=B A3=C B1=C B2=D
+0fa0,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=D A3=0 S0=C S1=D
+0faa,sky130_fd_sc_hd__a2bb2oi_1,8.7584,A1_N=A A2_N=D B1=C B2=D
+0fac,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=D A3=0 S0=C S1=D
+0faf,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=D A3=0 S0=C S1=D
+0fc0,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=B A2=D A3=0 S0=C S1=D
+0fca,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=D A3=0 S0=C S1=D
+0fcc,sky130_fd_sc_hd__a2bb2oi_1,8.7584,A1_N=B A2_N=D B1=C B2=D
+0fcf,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=D A3=0 S0=C S1=D
+0ff0,sky130_fd_sc_hd__a2bb2oi_1,8.7584,A1_N=C A2_N=D B1=C B2=D
+0ffa,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=C A2=D A3=0 S0=C S1=D
+0ffc,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=C A2=D A3=0 S0=C S1=D
+0fff,sky130_fd_sc_hd__nand2_1,3.7536,A=C B=D
+1000,sky130_fd_sc_hd__nor4bb_1,10.0096,A=A B=B C_N=C D_N=D
+1010,sky130_fd_sc_hd__nor3b_1,7.5072,A=A B=B C_N=C
+1100,sky130_fd_sc_hd__nor3b_1,7.5072,A=A B=B C_N=D
+1111,sky130_fd_sc_hd__nor2_1,3.7536,A=A B=B
+1113,sky130_fd_sc_hd__a221oi_1,8.7584,A1=A A2=C B1=A B2=D C1=B
+1115,sky130_fd_sc_hd__a221oi_1,8.7584,A1=B A2=C B1=B B2=D C1=A
+111f,sky130_fd_sc_hd__o22ai_1,6.256,A1=A A2=B B1=C B2=D
+1133,sky130_fd_sc_hd__a21oi_1,5.0048,A1=A A2=D B1=B
+113f,sky130_fd_sc_hd__a222oi_1,10.0096,A1=A A2=D B1=B B2=C C1=B C2=D
+1155,sky130_fd_sc_hd__a21oi_1,5.0048,A1=B A2=D B1=A
+115f,sky130_fd_sc_hd__a222oi_1,10.0096,A1=A A2=C B1=A B2=D C1=B C2=D
+1177,sky130_fd_sc_hd__a222oi_1,10.0096,A1=A A2=B B1=A B2=D C1=B C2=D
+11bb,sky130_fd_sc_hd__mux2i_1,10.0096,A0=B A1=D S=A
+11dd,sky130_fd_sc_hd__mux2i_1,10.0096,A0=A A1=D S=B
+11ff,sky130_fd_sc_hd__o21ai_0,5.0048,A1=A A2=B B1=D
+1313,sky130_fd_sc_hd__a21oi_1,5.0048,A1=A A2=C B1=B
+131f,sky130_fd_sc_hd__a222oi_1,10.0096,A1=A A2=C B1=B B2=C C1=B C2=D
+1333,sky130_fd_sc_hd__a31oi_1,6.256,A1=A A2=C A3=D B1=B
+1357,sky130_fd_sc_hd__a222oi_1,10.0096,A1=A A2=B B1=A B2=C C1=B C2=D
+135f,sky130_fd_sc_hd__a22oi_1,7.5072,A1=A A2=C B1=B B2=D
+13ff,sky130_fd_sc_hd__a32oi_1,8.7584,A1=A A2=C A3=D B1=B B2=D
+1515,sky130_fd_sc_hd__a21oi_1,5.0048,A1=B A2=C B1=A
+151f,sky130_fd_sc_hd__a222oi_1,10.0096,A1=A A2=C B1=A B2=D C1=B C2=C
+1537,sky130_fd_sc_hd__a222oi_1,10.0096,A1=A A2=B B1=A B2=D C1=B C2=C
+153f,sky130_fd_sc_hd__a22oi_1,7.5072,A1=A A2=D B1=B B2=C
+1555,sky130_fd_sc_hd__a31oi_1,6.256,A1=B A2=C A3=D B1=A
+15ff,sky130_fd_sc_hd__a32oi_1,8.7584,A1=B A2=C A3=D B1=A B2=D
+1717,sky130_fd_sc_hd__a222oi_1,10.0096,A1=A A2=B B1=A B2=C C1=B C2=C
+1b1b,sky130_fd_sc_hd__mux2i_1,10.0096,A0=B A1=C S=A
+1d1d,sky130_fd_sc_hd__mux2i_1,10.0096,A0=A A1=C S=B
+1f1f,sky130_fd_sc_hd__o21ai_0,5.0048,A1=A A2=B B1=C
+1f3f,sky130_fd_sc_hd__a32oi_1,8.7584,A1=A A2=C A3=D B1=B B2=C
+1f5f,sky130_fd_sc_hd__a32oi_1,8.7584,A1=B A2=C A3=D B1=A B2=C
+1fff,sky130_fd_sc_hd__o211ai_1,7.5072,A1=A A2=B B1=C C1=D
+2000,sky130_fd_sc_hd__and4b_1,10.0096,A_N=B B=A C=C D=D
+2020,sky130_fd_sc_hd__and3b_1,8.7584,A_N=B B=A C=C
+2200,sky130_fd_sc_hd__and3b_1,8.7584,A_N=B B=A C=D
+2222,sky130_fd_sc_hd__nor2b_1,6.256,A=B B_N=A
+2230,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=D A3=0 S0=D S1=B
+2233,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=D A3=0 S0=D S1=B
+2277,sky130_fd_sc_hd__mux2i_1,10.0096,A0=D A1=B S=A
+2288,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=A A3=0 S0=B S1=D
+22aa,sky130_fd_sc_hd__a21boi_0,7.5072,A1=B A2=D B1_N=A
+22b8,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=A A3=0 S0=B S1=D
+22bb,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=A A3=0 S0=B S1=D
+22c0,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=C A3=0 S0=D S1=B
+22cc,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=B A3=0 S0=D S1=B
+22e2,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=A A2=C A3=0 S0=D S1=B
+22ee,sky130_fd_sc_hd__a2bb2oi_1,8.7584,A1_N=A A2_N=B B1=B B2=D
+22f0,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=C A3=0 S0=D S1=B
+22f3,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=C A3=0 S0=D S1=B
+22fc,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=B A3=0 S0=D S1=B
+22ff,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=B A3=0 S0=D S1=B
+2320,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=A A2=C A3=0 S0=C S1=B
+2323,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=C A3=0 S0=C S1=B
+2727,sky130_fd_sc_hd__mux2i_1,10.0096,A0=C A1=B S=A
+2828,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=A A3=0 S0=B S1=C
+2a2a,sky130_fd_sc_hd__a21boi_0,7.5072,A1=B A2=C B1_N=A
+2b28,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=A A2=A A3=0 S0=B S1=C
+2b2b,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=A A3=0 S0=B S1=C
+2c20,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=D A3=0 S0=C S1=B
+2c2c,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=B A3=0 S0=C S1=B
+2e22,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=A A2=D A3=0 S0=C S1=B
+2e2e,sky130_fd_sc_hd__a2bb2oi_1,8.7584,A1_N=A A2_N=B B1=B B2=C
+2f20,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=A A2=D A3=0 S0=C S1=B
+2f23,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=D A3=0 S0=C S1=B
+2f2c,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=A A2=B A3=0 S0=C S1=B
+2f2f,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=B A3=0 S0=C S1=B
+3000,sky130_fd_sc_hd__and3b_1,8.7584,A_N=B B=C C=D
+3022,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=C A2=D A3=0 S0=D S1=B
+3030,sky130_fd_sc_hd__nor2b_1,6.256,A=B B_N=C
+3033,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=C A2=D A3=0 S0=D S1=B
+303f,sky130_fd_sc_hd__mux2i_1,10.0096,A0=D A1=B S=C
+3088,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=C A3=0 S0=B S1=D
+30aa,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=A A2=C A3=0 S0=B S1=D
+30b8,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=C A3=0 S0=B S1=D
+30bb,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=C A3=0 S0=B S1=D
+30c0,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=C A2=C A3=0 S0=B S1=D
+30cc,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=B A2=C A3=0 S0=B S1=D
+30e2,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=C A2=C A3=0 S0=B S1=D
+30ee,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=C A3=0 S0=B S1=D
+30f0,sky130_fd_sc_hd__a21boi_0,7.5072,A1=B A2=D B1_N=C
+30f3,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=C A2=C A3=0 S0=B S1=D
+30fc,sky130_fd_sc_hd__a2bb2oi_1,8.7584,A1_N=B A2_N=C B1=B B2=D
+30ff,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=C A3=0 S0=B S1=D
+3120,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=A A2=C A3=0 S0=B S1=A
+3131,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=C A3=0 S0=B S1=A
+3202,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=C A2=D A3=0 S0=B S1=C
+3210,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=D A3=0 S0=B S1=A
+3232,sky130_fd_sc_hd__a2bb2oi_1,8.7584,A1_N=A A2_N=C B1=B B2=B
+32fa,sky130_fd_sc_hd__a2bb2oi_1,8.7584,A1_N=A A2_N=C B1=B B2=D
+3300,sky130_fd_sc_hd__nor2b_1,6.256,A=B B_N=D
+3303,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=C A2=D A3=0 S0=B S1=C
+330f,sky130_fd_sc_hd__mux2i_1,10.0096,A0=C A1=B S=D
+3311,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=D A3=0 S0=B S1=A
+3322,sky130_fd_sc_hd__a2bb2oi_1,8.7584,A1_N=A A2_N=D B1=B B2=B
+3330,sky130_fd_sc_hd__a2bb2oi_1,8.7584,A1_N=C A2_N=D B1=B B2=B
+3333,sky130_fd_sc_hd__clkinv_1,3.7536,A=B
+3337,sky130_fd_sc_hd__o31ai_1,7.5072,A1=A A2=C A3=D B1=B
+333f,sky130_fd_sc_hd__o21ai_0,5.0048,A1=C A2=D B1=B
+3355,sky130_fd_sc_hd__mux2i_1,10.0096,A0=A A1=B S=D
+3377,sky130_fd_sc_hd__o21ai_0,5.0048,A1=A A2=D B1=B
+337f,sky130_fd_sc_hd__a32oi_1,8.7584,A1=A A2=B A3=C B1=B B2=D
+3388,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=D A3=0 S0=B S1=D
+33aa,sky130_fd_sc_hd__a2bb2oi_1,8.7584,A1_N=A A2_N=D B1=B B2=D
+33b8,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=D A3=0 S0=B S1=D
+33bb,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=D A3=0 S0=B S1=D
+33c0,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=C A2=D A3=0 S0=B S1=D
+33cc,sky130_fd_sc_hd__a2bb2oi_1,8.7584,A1_N=B A2_N=D B1=B B2=D
+33e2,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=C A2=D A3=0 S0=B S1=D
+33ee,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=D A3=0 S0=B S1=D
+33f0,sky130_fd_sc_hd__a2bb2oi_1,8.7584,A1_N=C A2_N=D B1=B B2=D
+33f3,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=C A2=D A3=0 S0=B S1=D
+33fc,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=B A2=D A3=0 S0=B S1=D
+33ff,sky130_fd_sc_hd__nand2_1,3.7536,A=B B=D
+3535,sky130_fd_sc_hd__mux2i_1,10.0096,A0=A A1=B S=C
+3737,sky130_fd_sc_hd__o21ai_0,5.0048,A1=A A2=C B1=B
+373f,sky130_fd_sc_hd__a32oi_1,8.7584,A1=A A2=B A3=D B1=B B2=C
+3777,sky130_fd_sc_hd__a32oi_1,8.7584,A1=B A2=C A3=D B1=A B2=B
+37ff,sky130_fd_sc_hd__o211ai_1,7.5072,A1=A A2=C B1=B C1=D
+3808,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=D A3=0 S0=B S1=C
+3838,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=C A3=0 S0=B S1=C
+3a0a,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=A A2=D A3=0 S0=B S1=C
+3a3a,sky130_fd_sc_hd__a2bb2oi_1,8.7584,A1_N=A A2_N=C B1=B B2=C
+3b08,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=A A2=D A3=0 S0=B S1=C
+3b0b,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=D A3=0 S0=B S1=C
+3b38,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=A A2=C A3=0 S0=B S1=C
+3b3b,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=C A3=0 S0=B S1=C
+3c00,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=D A2=D A3=0 S0=B S1=C
+3c0c,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=B A2=D A3=0 S0=B S1=C
+3c30,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=C A2=D A3=0 S0=C S1=B
+3c3c,sky130_fd_sc_hd__a2bb2oi_1,8.7584,A1_N=B A2_N=C B1=B B2=C
+3cc3,sky130_fd_sc_hd__xnor3_1,22.5216,A=B B=C C=D
+3e02,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=D A2=D A3=0 S0=B S1=C
+3e0e,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=D A3=0 S0=B S1=C
+3e32,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=C A2=D A3=0 S0=C S1=B
+3e3e,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=C A3=0 S0=B S1=C
+3f00,sky130_fd_sc_hd__a21boi_0,7.5072,A1=B A2=C B1_N=D
+3f03,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=D A2=D A3=0 S0=B S1=C
+3f0c,sky130_fd_sc_hd__a2bb2oi_1,8.7584,A1_N=B A2_N=D B1=B B2=C
+3f0f,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=D A3=0 S0=B S1=C
+3f2a,sky130_fd_sc_hd__a2bb2oi_1,8.7584,A1_N=A A2_N=D B1=B B2=C
+3f30,sky130_fd_sc_hd__a2bb2oi_1,8.7584,A1_N=C A2_N=D B1=B B2=C
+3f33,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=C A2=D A3=0 S0=C S1=B
+3f3c,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=B A2=C A3=0 S0=B S1=C
+3f3f,sky130_fd_sc_hd__nand2_1,3.7536,A=B B=C
+3f7f,sky130_fd_sc_hd__o211ai_1,7.5072,A1=A A2=D B1=B C1=C
+3fff,sky130_fd_sc_hd__nand3_1,5.0048,A=B B=C C=D
+4000,sky130_fd_sc_hd__and4b_1,10.0096,A_N=A B=B C=C D=D
+4040,sky130_fd_sc_hd__and3b_1,8.7584,A_N=A B=B C=C
+4400,sky130_fd_sc_hd__and3b_1,8.7584,A_N=A B=B C=D
+4444,sky130_fd_sc_hd__nor2b_1,6.256,A=A B_N=B
+4450,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=B A2=D A3=0 S0=D S1=A
+4455,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=D A3=0 S0=D S1=A
+4477,sky130_fd_sc_hd__mux2i_1,10.0096,A0=D A1=A S=B
+4488,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=B A3=0 S0=A S1=D
+44a0,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=C A3=0 S0=D S1=A
+44aa,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=A A2=B A3=0 S0=A S1=D
+44cc,sky130_fd_sc_hd__a21boi_0,7.5072,A1=A A2=D B1_N=B
+44d8,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=B A2=B A3=0 S0=A S1=D
+44dd,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=B A3=0 S0=A S1=D
+44e4,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=B A2=C A3=0 S0=D S1=A
+44ee,sky130_fd_sc_hd__a2bb2oi_1,8.7584,A1_N=A A2_N=B B1=A B2=D
+44f0,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=B A2=C A3=0 S0=D S1=A
+44f5,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=C A3=0 S0=D S1=A
+44fa,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=B A3=0 S0=A S1=D
+44ff,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=B A3=0 S0=A S1=D
+4540,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=B A2=C A3=0 S0=C S1=A
+4545,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=C A3=0 S0=C S1=A
+4747,sky130_fd_sc_hd__mux2i_1,10.0096,A0=C A1=A S=B
+4848,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=B A3=0 S0=A S1=C
+4a40,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=D A3=0 S0=C S1=A
+4a4a,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=A A2=B A3=0 S0=A S1=C
+4c4c,sky130_fd_sc_hd__a21boi_0,7.5072,A1=A A2=C B1_N=B
+4d48,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=B A2=B A3=0 S0=A S1=C
+4d4d,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=B A3=0 S0=A S1=C
+4e44,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=B A2=D A3=0 S0=C S1=A
+4e4e,sky130_fd_sc_hd__a2bb2oi_1,8.7584,A1_N=A A2_N=B B1=A B2=C
+4f40,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=B A2=D A3=0 S0=C S1=A
+4f45,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=D A3=0 S0=C S1=A
+4f4a,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=A A2=B A3=0 S0=A S1=C
+4f4f,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=B A3=0 S0=A S1=C
+5000,sky130_fd_sc_hd__and3b_1,8.7584,A_N=A B=C C=D
+5044,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=C A2=D A3=0 S0=D S1=A
+5050,sky130_fd_sc_hd__nor2b_1,6.256,A=A B_N=C
+5055,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=C A2=D A3=0 S0=D S1=A
+505f,sky130_fd_sc_hd__mux2i_1,10.0096,A0=D A1=A S=C
+5088,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=C A3=0 S0=A S1=D
+50a0,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=C A2=C A3=0 S0=A S1=D
+50aa,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=A A2=C A3=0 S0=A S1=D
+50cc,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=B A2=C A3=0 S0=A S1=D
+50d8,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=B A2=C A3=0 S0=A S1=D
+50dd,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=C A3=0 S0=A S1=D
+50e4,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=C A2=C A3=0 S0=A S1=D
+50ee,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=C A3=0 S0=A S1=D
+50f0,sky130_fd_sc_hd__a21boi_0,7.5072,A1=A A2=D B1_N=C
+50f5,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=C A2=C A3=0 S0=A S1=D
+50fa,sky130_fd_sc_hd__a2bb2oi_1,8.7584,A1_N=A A2_N=C B1=A B2=D
+50ff,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=C A3=0 S0=A S1=D
+5140,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=B A2=C A3=0 S0=A S1=B
+5151,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=C A3=0 S0=A S1=B
+5353,sky130_fd_sc_hd__mux2i_1,10.0096,A0=B A1=A S=C
+5404,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=C A2=D A3=0 S0=A S1=C
+5410,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=B A2=D A3=0 S0=A S1=B
+5454,sky130_fd_sc_hd__a2bb2oi_1,8.7584,A1_N=B A2_N=C B1=A B2=A
+54fc,sky130_fd_sc_hd__a2bb2oi_1,8.7584,A1_N=B A2_N=C B1=A B2=D
+5500,sky130_fd_sc_hd__nor2b_1,6.256,A=A B_N=D
+5505,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=C A2=D A3=0 S0=A S1=C
+550f,sky130_fd_sc_hd__mux2i_1,10.0096,A0=C A1=A S=D
+5511,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=D A3=0 S0=A S1=B
+5533,sky130_fd_sc_hd__mux2i_1,10.0096,A0=B A1=A S=D
+5544,sky130_fd_sc_hd__a2bb2oi_1,8.7584,A1_N=B A2_N=D B1=A B2=A
+5550,sky130_fd_sc_hd__a2bb2oi_1,8.7584,A1_N=C A2_N=D B1=A B2=A
+5555,sky130_fd_sc_hd__clkinv_1,3.7536,A=A
+5557,sky130_fd_sc_hd__o31ai_1,7.5072,A1=B A2=C A3=D B1=A
+555f,sky130_fd_sc_hd__o21ai_0,5.0048,A1=C A2=D B1=A
+5577,sky130_fd_sc_hd__o21ai_0,5.0048,A1=B A2=D B1=A
+557f,sky130_fd_sc_hd__a32oi_1,8.7584,A1=A A2=B A3=C B1=A B2=D
+5588,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=D A3=0 S0=A S1=D
+55a0,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=C A2=D A3=0 S0=A S1=D
+55aa,sky130_fd_sc_hd__a2bb2oi_1,8.7584,A1_N=A A2_N=D B1=A B2=D
+55cc,sky130_fd_sc_hd__a2bb2oi_1,8.7584,A1_N=B A2_N=D B1=A B2=D
+55d8,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=B A2=D A3=0 S0=A S1=D
+55dd,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=D A3=0 S0=A S1=D
+55e4,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=C A2=D A3=0 S0=A S1=D
+55ee,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=D A3=0 S0=A S1=D
+55f0,sky130_fd_sc_hd__a2bb2oi_1,8.7584,A1_N=C A2_N=D B1=A B2=D
+55f5,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=C A2=D A3=0 S0=A S1=D
+55fa,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=D A3=0 S0=A S1=D
+55ff,sky130_fd_sc_hd__nand2_1,3.7536,A=A B=D
+5757,sky130_fd_sc_hd__o21ai_0,5.0048,A1=B A2=C B1=A
+575f,sky130_fd_sc_hd__a32oi_1,8.7584,A1=A A2=B A3=D B1=A B2=C
+5777,sky130_fd_sc_hd__a32oi_1,8.7584,A1=A A2=C A3=D B1=A B2=B
+57ff,sky130_fd_sc_hd__o211ai_1,7.5072,A1=B A2=C B1=A C1=D
+5808,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=D A3=0 S0=A S1=C
+5858,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=C A3=0 S0=A S1=C
+5a00,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=D A2=D A3=0 S0=A S1=C
+5a0a,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=A A2=D A3=0 S0=A S1=C
+5a50,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=C A2=D A3=0 S0=C S1=A
+5a5a,sky130_fd_sc_hd__a2bb2oi_1,8.7584,A1_N=A A2_N=C B1=A B2=C
+5aa5,sky130_fd_sc_hd__xnor3_1,22.5216,A=A B=C C=D
+5c0c,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=B A2=D A3=0 S0=A S1=C
+5c5c,sky130_fd_sc_hd__a2bb2oi_1,8.7584,A1_N=B A2_N=C B1=A B2=C
+5d08,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=B A2=D A3=0 S0=A S1=C
+5d0d,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=D A3=0 S0=A S1=C
+5d58,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=B A2=C A3=0 S0=A S1=C
+5d5d,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=C A3=0 S0=A S1=C
+5e04,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=D A2=D A3=0 S0=A S1=C
+5e0e,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=D A3=0 S0=A S1=C
+5e54,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=C A2=D A3=0 S0=C S1=A
+5e5e,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=C A3=0 S0=A S1=C
+5f00,sky130_fd_sc_hd__a21boi_0,7.5072,A1=A A2=C B1_N=D
+5f05,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=D A2=D A3=0 S0=A S1=C
+5f0a,sky130_fd_sc_hd__a2bb2oi_1,8.7584,A1_N=A A2_N=D B1=A B2=C
+5f0f,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=D A3=0 S0=A S1=C
+5f4c,sky130_fd_sc_hd__a2bb2oi_1,8.7584,A1_N=B A2_N=D B1=A B2=C
+5f50,sky130_fd_sc_hd__a2bb2oi_1,8.7584,A1_N=C A2_N=D B1=A B2=C
+5f55,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=C A2=D A3=0 S0=C S1=A
+5f5a,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=A A2=C A3=0 S0=A S1=C
+5f5f,sky130_fd_sc_hd__nand2_1,3.7536,A=A B=C
+5f7f,sky130_fd_sc_hd__o211ai_1,7.5072,A1=B A2=D B1=A C1=C
+5fff,sky130_fd_sc_hd__nand3_1,5.0048,A=A B=C C=D
+6060,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=C A2=C A3=0 S0=A S1=B
+6240,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=C A2=D A3=0 S0=B S1=A
+6262,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=A A2=C A3=0 S0=A S1=B
+6420,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=C A2=D A3=0 S0=A S1=B
+6464,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=C A3=0 S0=B S1=A
+6600,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=D A2=D A3=0 S0=A S1=B
+6622,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=A A2=D A3=0 S0=A S1=B
+6644,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=D A3=0 S0=B S1=A
+6666,sky130_fd_sc_hd__a2bb2oi_1,8.7584,A1_N=A A2_N=B B1=A B2=B
+6699,sky130_fd_sc_hd__xnor3_1,22.5216,A=A B=B C=D
+6969,sky130_fd_sc_hd__xnor3_1,22.5216,A=A B=B C=C
+7070,sky130_fd_sc_hd__a21boi_0,7.5072,A1=A A2=B B1_N=C
+7160,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=C A2=C A3=0 S0=A S1=B
+7171,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=C A2=C A3=0 S0=A S1=B
+7250,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=C A2=D A3=0 S0=B S1=A
+7272,sky130_fd_sc_hd__a2bb2oi_1,8.7584,A1_N=A A2_N=C B1=A B2=B
+7340,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=C A2=D A3=0 S0=B S1=A
+7351,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=C A2=D A3=0 S0=B S1=A
+7362,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=A A2=C A3=0 S0=A S1=B
+7373,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=C A3=0 S0=A S1=B
+7430,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=C A2=D A3=0 S0=A S1=B
+7474,sky130_fd_sc_hd__a2bb2oi_1,8.7584,A1_N=B A2_N=C B1=A B2=B
+7520,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=C A2=D A3=0 S0=A S1=B
+7531,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=C A2=D A3=0 S0=A S1=B
+7564,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=B A2=C A3=0 S0=B S1=A
+7575,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=C A3=0 S0=B S1=A
+7610,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=D A2=D A3=0 S0=A S1=B
+7632,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=D A3=0 S0=A S1=B
+7654,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=B A2=D A3=0 S0=B S1=A
+7676,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=B A3=0 S0=A S1=B
+7700,sky130_fd_sc_hd__a21boi_0,7.5072,A1=A A2=B B1_N=D
+7711,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=D A2=D A3=0 S0=A S1=B
+7722,sky130_fd_sc_hd__a2bb2oi_1,8.7584,A1_N=A A2_N=D B1=A B2=B
+7733,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=D A3=0 S0=A S1=B
+7744,sky130_fd_sc_hd__a2bb2oi_1,8.7584,A1_N=B A2_N=D B1=A B2=B
+7755,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=D A3=0 S0=B S1=A
+7766,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=A A2=B A3=0 S0=A S1=B
+7770,sky130_fd_sc_hd__a2bb2oi_1,8.7584,A1_N=C A2_N=D B1=A B2=B
+7777,sky130_fd_sc_hd__nand2_1,3.7536,A=A B=B
+777f,sky130_fd_sc_hd__o211ai_1,7.5072,A1=C A2=D B1=A C1=B
+77ff,sky130_fd_sc_hd__nand3_1,5.0048,A=A B=B C=D
+7f7f,sky130_fd_sc_hd__nand3_1,5.0048,A=A B=B C=C
+7fff,sky130_fd_sc_hd__nand4_1,6.256,A=A B=B C=C D=D
+8000,sky130_fd_sc_hd__and4_1,8.7584,A=A B=B C=C D=D
+8080,sky130_fd_sc_hd__and3_1,6.256,A=A B=B C=C
+8282,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=C A3=A S0=C S1=B
+8380,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=B A2=C A3=A S0=C S1=B
+8383,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=C A3=A S0=C S1=B
+8484,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=C A3=B S0=C S1=A
+8580,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=A A2=C A3=B S0=C S1=A
+8585,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=C A3=B S0=C S1=A
+8800,sky130_fd_sc_hd__and3_1,6.256,A=A B=B C=D
+8822,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=D A3=A S0=D S1=B
+8830,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=B A2=D A3=A S0=D S1=B
+8833,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=D A3=A S0=D S1=B
+8844,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=D A3=B S0=D S1=A
+8850,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=D A3=B S0=D S1=A
+8855,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=D A3=B S0=D S1=A
+8880,sky130_fd_sc_hd__o211a_1,10.0096,A1=C A2=D B1=A C1=B
+8888,sky130_fd_sc_hd__and2_0,6.256,A=A B=B
+888f,sky130_fd_sc_hd__o2bb2ai_1,8.7584,A1_N=A A2_N=B B1=C B2=D
+88a0,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=A A2=C A3=B S0=D S1=A
+88aa,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=A A2=A A3=B S0=A S1=D
+88b8,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=B A3=A S0=B S1=D
+88bb,sky130_fd_sc_hd__o2bb2ai_1,8.7584,A1_N=A A2_N=B B1=B B2=D
+88c0,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=B A2=C A3=A S0=D S1=B
+88cc,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=B A3=B S0=D S1=A
+88d8,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=B A3=B S0=D S1=A
+88dd,sky130_fd_sc_hd__o2bb2ai_1,8.7584,A1_N=A A2_N=B B1=A B2=D
+88e2,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=C A3=A S0=D S1=B
+88e4,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=C A3=B S0=D S1=A
+88ee,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=B A3=A S0=B S1=D
+88f0,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=C A3=B S0=D S1=A
+88f3,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=C A3=A S0=D S1=B
+88f5,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=C A3=B S0=D S1=A
+88fa,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=A A3=B S0=A S1=D
+88fc,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=B A2=B A3=A S0=B S1=D
+88ff,sky130_fd_sc_hd__o2bb2ai_1,8.7584,A1_N=A A2_N=B B1=D B2=D
+8a80,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=A A2=D A3=B S0=C S1=A
+8a8a,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=A A2=A A3=B S0=A S1=C
+8b88,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=A A2=B A3=A S0=B S1=C
+8b8b,sky130_fd_sc_hd__o2bb2ai_1,8.7584,A1_N=A A2_N=B B1=B B2=C
+8c80,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=B A2=D A3=A S0=C S1=B
+8c8c,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=B A3=B S0=C S1=A
+8d88,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=A A2=B A3=B S0=C S1=A
+8d8d,sky130_fd_sc_hd__o2bb2ai_1,8.7584,A1_N=A A2_N=B B1=A B2=C
+8e82,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=D A3=A S0=C S1=B
+8e84,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=D A3=B S0=C S1=A
+8e8e,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=B A3=A S0=B S1=C
+8f80,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=A A2=D A3=B S0=C S1=A
+8f83,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=D A3=A S0=C S1=B
+8f85,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=D A3=B S0=C S1=A
+8f8a,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=A A2=A A3=B S0=A S1=C
+8f8c,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=B A2=B A3=A S0=B S1=C
+8f8f,sky130_fd_sc_hd__o2bb2ai_1,8.7584,A1_N=A A2_N=B B1=C B2=C
+9090,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=B A3=C S0=B S1=A
+9180,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=A A2=B A3=C S0=B S1=A
+9191,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=B A3=C S0=B S1=A
+9696,sky130_fd_sc_hd__xor3_1,23.7728,A=A B=B C=C
+9810,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=B A3=D S0=B S1=A
+9898,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=B A3=A S0=B S1=A
+9900,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=A A2=B A3=D S0=B S1=A
+9911,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=B A3=D S0=B S1=A
+9966,sky130_fd_sc_hd__xor3_1,23.7728,A=A B=B C=D
+9988,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=A A2=B A3=A S0=B S1=A
+9999,sky130_fd_sc_hd__o2bb2ai_1,8.7584,A1_N=A A2_N=B B1=A B2=B
+a000,sky130_fd_sc_hd__and3_1,6.256,A=A B=C C=D
+a00a,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=C A2=D A3=A S0=D S1=C
+a00c,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=C A2=D A3=A S0=D S1=C
+a00f,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=C A2=D A3=A S0=D S1=C
+a044,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=D A3=C S0=D S1=A
+a050,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=D A3=C S0=D S1=A
+a055,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=D A3=C S0=D S1=A
+a080,sky130_fd_sc_hd__o211a_1,10.0096,A1=B A2=D B1=A C1=C
+a088,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=A A2=B A3=C S0=D S1=A
+a0a0,sky130_fd_sc_hd__and2_0,6.256,A=A B=C
+a0aa,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=A A2=A A3=C S0=A S1=D
+a0ac,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=C A3=A S0=C S1=D
+a0af,sky130_fd_sc_hd__o2bb2ai_1,8.7584,A1_N=A A2_N=C B1=C B2=D
+a0b3,sky130_fd_sc_hd__o2bb2ai_1,8.7584,A1_N=A A2_N=C B1=B B2=D
+a0c0,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=B A2=C A3=A S0=C S1=D
+a0ca,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=C A3=A S0=C S1=D
+a0cc,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=B A3=C S0=D S1=A
+a0cf,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=C A3=A S0=C S1=D
+a0d8,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=B A3=C S0=D S1=A
+a0dd,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=B A3=C S0=D S1=A
+a0e4,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=C A3=C S0=D S1=A
+a0ee,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=A A3=C S0=A S1=D
+a0f0,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=C A3=C S0=D S1=A
+a0f5,sky130_fd_sc_hd__o2bb2ai_1,8.7584,A1_N=A A2_N=C B1=A B2=D
+a0fa,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=C A2=C A3=A S0=C S1=D
+a0fc,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=C A2=C A3=A S0=C S1=D
+a0ff,sky130_fd_sc_hd__o2bb2ai_1,8.7584,A1_N=A A2_N=C B1=D B2=D
+a280,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=A A2=D A3=C S0=B S1=A
+a2a2,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=A A2=A A3=C S0=A S1=B
+a3a0,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=A A2=C A3=A S0=C S1=B
+a3a3,sky130_fd_sc_hd__o2bb2ai_1,8.7584,A1_N=A A2_N=C B1=B B2=C
+a404,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=C A3=D S0=C S1=A
+a4a4,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=C A3=A S0=C S1=A
+a500,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=A A2=C A3=D S0=C S1=A
+a505,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=C A3=D S0=C S1=A
+a55a,sky130_fd_sc_hd__xor3_1,23.7728,A=A B=C C=D
+a5a0,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=A A2=C A3=A S0=C S1=A
+a5a5,sky130_fd_sc_hd__o2bb2ai_1,8.7584,A1_N=A A2_N=C B1=A B2=C
+a800,sky130_fd_sc_hd__o211a_1,10.0096,A1=B A2=C B1=A C1=D
+a808,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=A A2=B A3=D S0=C S1=A
+a820,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=A A2=C A3=D S0=B S1=A
+a888,sky130_fd_sc_hd__a32o_1,10.0096,A1=A A2=C A3=D B1=A B2=B
+a8a0,sky130_fd_sc_hd__a32o_1,10.0096,A1=A A2=B A3=D B1=A B2=C
+a8a8,sky130_fd_sc_hd__o21a_1,7.5072,A1=B A2=C B1=A
+aa00,sky130_fd_sc_hd__and2_0,6.256,A=A B=D
+aa0a,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=A A2=A A3=D S0=A S1=C
+aa0c,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=D A3=A S0=D S1=C
+aa0f,sky130_fd_sc_hd__o2bb2ai_1,8.7584,A1_N=A A2_N=D B1=C B2=D
+aa22,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=A A2=A A3=D S0=A S1=B
+aa30,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=D A3=A S0=D S1=B
+aa33,sky130_fd_sc_hd__o2bb2ai_1,8.7584,A1_N=A A2_N=D B1=B B2=D
+aa44,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=D A3=A S0=D S1=A
+aa50,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=D A3=A S0=D S1=A
+aa55,sky130_fd_sc_hd__o2bb2ai_1,8.7584,A1_N=A A2_N=D B1=A B2=D
+aa80,sky130_fd_sc_hd__a32o_1,10.0096,A1=A A2=B A3=C B1=A B2=D
+aa88,sky130_fd_sc_hd__o21a_1,7.5072,A1=B A2=D B1=A
+aaa0,sky130_fd_sc_hd__o21a_1,7.5072,A1=C A2=D B1=A
+aaa8,sky130_fd_sc_hd__o31a_1,8.7584,A1=B A2=C A3=D B1=A
+aaaa,sky130_fd_sc_hd__buf_1,3.7536,A=A
+aaac,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=A A3=A S0=C S1=D
+aaaf,sky130_fd_sc_hd__o21bai_1,7.5072,A1=C A2=D B1_N=A
+aab8,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=A A3=A S0=B S1=D
+aabb,sky130_fd_sc_hd__o21bai_1,7.5072,A1=B A2=D B1_N=A
+aac0,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=C A3=A S0=D S1=B
+aaca,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=A A2=B A3=A S0=D S1=C
+aacc,sky130_fd_sc_hd__mux2_1,11.2608,A0=B A1=A S=D
+aacf,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=B A3=A S0=D S1=C
+aad8,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=B A3=A S0=D S1=A
+aadd,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=B A3=A S0=D S1=A
+aae2,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=A A2=C A3=A S0=D S1=B
+aae4,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=C A3=A S0=D S1=A
+aaee,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=A A2=B A3=A S0=D S1=B
+aaf0,sky130_fd_sc_hd__mux2_1,11.2608,A0=C A1=A S=D
+aaf3,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=C A3=A S0=D S1=B
+aaf5,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=C A3=A S0=D S1=A
+aafa,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=A A2=C A3=A S0=D S1=C
+aafc,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=C A3=A S0=D S1=C
+aaff,sky130_fd_sc_hd__nand2b_1,6.256,A_N=A B=D
+ab03,sky130_fd_sc_hd__o2bb2ai_1,8.7584,A1_N=A A2_N=D B1=B B2=C
+aba8,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=A A2=A A3=A S0=B S1=C
+abab,sky130_fd_sc_hd__o21bai_1,7.5072,A1=B A2=C B1_N=A
+ac00,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=B A2=D A3=A S0=D S1=C
+ac0a,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=D A3=A S0=D S1=C
+ac0c,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=B A3=D S0=C S1=A
+ac0f,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=D A3=A S0=D S1=C
+aca0,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=D A3=A S0=C S1=B
+acaa,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=A A2=B A3=A S0=C S1=D
+acac,sky130_fd_sc_hd__mux2_1,11.2608,A0=B A1=A S=C
+acaf,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=B A3=A S0=C S1=D
+acc0,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=B A2=B A3=A S0=C S1=D
+acca,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=B A3=A S0=C S1=D
+accc,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=B A2=B A3=A S0=C S1=D
+accf,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=B A3=A S0=C S1=D
+acf0,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=B A2=C A3=A S0=D S1=C
+acfa,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=C A3=A S0=D S1=C
+acfc,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=B A2=C A3=A S0=D S1=C
+acff,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=C A3=A S0=D S1=C
+ad08,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=A A2=B A3=D S0=C S1=A
+ad0d,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=B A3=D S0=C S1=A
+ada8,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=A A2=B A3=A S0=C S1=A
+adad,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=B A3=A S0=C S1=A
+ae04,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=D A3=D S0=C S1=A
+ae0e,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=A A3=D S0=A S1=C
+aea2,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=A A2=D A3=A S0=C S1=B
+aea4,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=D A3=A S0=C S1=A
+aeae,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=A A2=B A3=A S0=C S1=B
+af00,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=D A2=D A3=A S0=C S1=D
+af05,sky130_fd_sc_hd__o2bb2ai_1,8.7584,A1_N=A A2_N=D B1=A B2=C
+af0a,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=D A2=D A3=A S0=C S1=D
+af0c,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=D A2=D A3=A S0=C S1=D
+af0f,sky130_fd_sc_hd__o2bb2ai_1,8.7584,A1_N=A A2_N=D B1=C B2=C
+afa0,sky130_fd_sc_hd__mux2_1,11.2608,A0=D A1=A S=C
+afa3,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=D A3=A S0=C S1=B
+afa5,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=D A3=A S0=C S1=A
+afaa,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=A A2=D A3=A S0=C S1=D
+afac,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=D A3=A S0=C S1=D
+afaf,sky130_fd_sc_hd__nand2b_1,6.256,A_N=A B=C
+afc0,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=B A2=D A3=A S0=C S1=D
+afca,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=D A3=A S0=C S1=D
+afcc,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=B A2=D A3=A S0=C S1=D
+afcf,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=D A3=A S0=C S1=D
+aff0,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=C A2=D A3=A S0=C S1=D
+affa,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=C A2=D A3=A S0=C S1=D
+affc,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=C A2=D A3=A S0=C S1=D
+afff,sky130_fd_sc_hd__nand3b_1,7.5072,A_N=A B=C C=D
+b080,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=C A2=D A3=A S0=B S1=C
+b0b0,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=C A2=C A3=A S0=B S1=C
+b1a0,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=A A2=C A3=C S0=B S1=A
+b1b1,sky130_fd_sc_hd__o2bb2ai_1,8.7584,A1_N=A A2_N=C B1=A B2=B
+b282,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=C A2=D A3=A S0=B S1=C
+b290,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=D A3=C S0=B S1=A
+b2b2,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=C A2=C A3=A S0=B S1=C
+b380,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=A A2=D A3=C S0=B S1=A
+b383,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=C A2=D A3=A S0=B S1=C
+b391,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=D A3=C S0=B S1=A
+b3a2,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=A A2=A A3=C S0=A S1=B
+b3b0,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=C A2=C A3=A S0=B S1=C
+b3b3,sky130_fd_sc_hd__o2bb2ai_1,8.7584,A1_N=A A2_N=C B1=B B2=B
+b800,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=C A2=D A3=A S0=D S1=B
+b822,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=C A2=D A3=A S0=D S1=B
+b830,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=C A3=D S0=B S1=A
+b833,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=C A2=D A3=A S0=D S1=B
+b888,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=C A3=A S0=B S1=D
+b8aa,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=A A2=C A3=A S0=B S1=D
+b8b8,sky130_fd_sc_hd__mux2_1,11.2608,A0=C A1=A S=B
+b8bb,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=C A3=A S0=B S1=D
+b8c0,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=C A2=C A3=A S0=B S1=D
+b8cc,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=B A2=C A3=A S0=B S1=D
+b8e2,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=C A2=C A3=A S0=B S1=D
+b8ee,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=C A3=A S0=B S1=D
+b8f0,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=C A2=C A3=A S0=B S1=D
+b8f3,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=C A2=C A3=A S0=B S1=D
+b8fc,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=B A2=C A3=A S0=B S1=D
+b8ff,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=C A3=A S0=B S1=D
+b920,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=A A2=C A3=D S0=B S1=A
+b931,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=C A3=D S0=B S1=A
+b9a8,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=A A2=C A3=A S0=B S1=A
+b9b9,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=C A3=A S0=B S1=A
+ba10,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=D A3=D S0=B S1=A
+ba32,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=A A3=D S0=A S1=B
+ba8a,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=A A2=D A3=A S0=B S1=C
+ba98,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=D A3=A S0=B S1=A
+baba,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=A A2=C A3=A S0=B S1=C
+bb00,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=D A2=D A3=A S0=B S1=D
+bb11,sky130_fd_sc_hd__o2bb2ai_1,8.7584,A1_N=A A2_N=D B1=A B2=B
+bb22,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=D A2=D A3=A S0=B S1=D
+bb30,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=D A2=D A3=A S0=B S1=D
+bb33,sky130_fd_sc_hd__o2bb2ai_1,8.7584,A1_N=A A2_N=D B1=B B2=B
+bb88,sky130_fd_sc_hd__mux2_1,11.2608,A0=D A1=A S=B
+bb8b,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=D A3=A S0=B S1=C
+bb99,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=D A3=A S0=B S1=A
+bbaa,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=A A2=D A3=A S0=B S1=D
+bbb8,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=D A3=A S0=B S1=D
+bbbb,sky130_fd_sc_hd__nand2b_1,6.256,A_N=A B=B
+bbc0,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=C A2=D A3=A S0=B S1=D
+bbcc,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=B A2=D A3=A S0=B S1=D
+bbe2,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=C A2=D A3=A S0=B S1=D
+bbee,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=D A3=A S0=B S1=D
+bbf0,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=C A2=D A3=A S0=B S1=D
+bbf3,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=C A2=D A3=A S0=B S1=D
+bbfc,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=B A2=D A3=A S0=B S1=D
+bbff,sky130_fd_sc_hd__nand3b_1,7.5072,A_N=A B=B C=D
+bc80,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=D A2=D A3=A S0=B S1=C
+bc8c,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=B A2=D A3=A S0=B S1=C
+bcb0,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=C A2=D A3=A S0=C S1=B
+bcbc,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=B A2=C A3=A S0=B S1=C
+be82,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=D A2=D A3=A S0=B S1=C
+be8e,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=D A3=A S0=B S1=C
+beb2,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=C A2=D A3=A S0=C S1=B
+bebe,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=C A3=A S0=B S1=C
+bf80,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=D A2=D A3=A S0=B S1=C
+bf83,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=D A2=D A3=A S0=B S1=C
+bf8c,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=B A2=D A3=A S0=B S1=C
+bf8f,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=D A3=A S0=B S1=C
+bfb0,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=C A2=D A3=A S0=C S1=B
+bfb3,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=C A2=D A3=A S0=C S1=B
+bfbc,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=B A2=C A3=A S0=B S1=C
+bfbf,sky130_fd_sc_hd__nand3b_1,7.5072,A_N=A B=B C=C
+bfff,sky130_fd_sc_hd__nand4b_1,8.7584,A_N=A B=B C=C D=D
+c000,sky130_fd_sc_hd__and3_1,6.256,A=B B=C C=D
+c00a,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=C A2=D A3=B S0=D S1=C
+c00c,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=C A2=D A3=B S0=D S1=C
+c00f,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=C A2=D A3=B S0=D S1=C
+c022,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=D A3=C S0=D S1=B
+c030,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=B A2=D A3=C S0=D S1=B
+c033,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=D A3=C S0=D S1=B
+c080,sky130_fd_sc_hd__o211a_1,10.0096,A1=A A2=D B1=B C1=C
+c088,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=B A3=C S0=B S1=D
+c0a0,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=C A3=B S0=C S1=D
+c0aa,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=A A2=B A3=C S0=B S1=D
+c0ac,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=C A3=B S0=C S1=D
+c0af,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=C A3=B S0=C S1=D
+c0b8,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=B A3=C S0=B S1=D
+c0bb,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=B A3=C S0=B S1=D
+c0c0,sky130_fd_sc_hd__and2_0,6.256,A=B B=C
+c0ca,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=C A3=B S0=C S1=D
+c0cc,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=B A2=B A3=C S0=B S1=D
+c0cf,sky130_fd_sc_hd__o2bb2ai_1,8.7584,A1_N=B A2_N=C B1=C B2=D
+c0d5,sky130_fd_sc_hd__o2bb2ai_1,8.7584,A1_N=B A2_N=C B1=A B2=D
+c0e2,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=C A3=C S0=D S1=B
+c0ee,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=B A3=C S0=B S1=D
+c0f0,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=B A2=C A3=C S0=D S1=B
+c0f3,sky130_fd_sc_hd__o2bb2ai_1,8.7584,A1_N=B A2_N=C B1=B B2=D
+c0fa,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=C A2=C A3=B S0=C S1=D
+c0fc,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=C A2=C A3=B S0=C S1=D
+c0ff,sky130_fd_sc_hd__o2bb2ai_1,8.7584,A1_N=B A2_N=C B1=D B2=D
+c202,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=C A3=D S0=C S1=B
+c2c2,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=C A3=B S0=C S1=B
+c300,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=B A2=C A3=D S0=C S1=B
+c303,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=C A3=D S0=C S1=B
+c33c,sky130_fd_sc_hd__xor3_1,23.7728,A=B B=C C=D
+c3c0,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=B A2=C A3=B S0=C S1=B
+c3c3,sky130_fd_sc_hd__o2bb2ai_1,8.7584,A1_N=B A2_N=C B1=B B2=C
+c480,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=D A3=C S0=A S1=B
+c4c4,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=B A3=C S0=A S1=B
+c5c0,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=B A2=C A3=B S0=C S1=A
+c5c5,sky130_fd_sc_hd__o2bb2ai_1,8.7584,A1_N=B A2_N=C B1=A B2=C
+c800,sky130_fd_sc_hd__o211a_1,10.0096,A1=A A2=C B1=B C1=D
+c808,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=B A3=D S0=B S1=C
+c840,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=C A3=D S0=A S1=B
+c888,sky130_fd_sc_hd__a32o_1,10.0096,A1=B A2=C A3=D B1=A B2=B
+c8c0,sky130_fd_sc_hd__a32o_1,10.0096,A1=A A2=B A3=D B1=B B2=C
+c8c8,sky130_fd_sc_hd__o21a_1,7.5072,A1=A A2=C B1=B
+ca00,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=D A3=B S0=D S1=C
+ca0a,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=A A2=B A3=D S0=B S1=C
+ca0c,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=D A3=B S0=D S1=C
+ca0f,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=D A3=B S0=D S1=C
+caa0,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=A A3=B S0=C S1=D
+caaa,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=A A2=A A3=B S0=C S1=D
+caac,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=A A3=B S0=C S1=D
+caaf,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=A A3=B S0=C S1=D
+cac0,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=D A3=B S0=C S1=A
+caca,sky130_fd_sc_hd__mux2_1,11.2608,A0=A A1=B S=C
+cacc,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=B A3=B S0=D S1=C
+cacf,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=B A3=B S0=D S1=C
+caf0,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=C A3=B S0=D S1=C
+cafa,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=A A2=C A3=B S0=D S1=C
+cafc,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=C A3=B S0=D S1=C
+caff,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=C A3=B S0=D S1=C
+cb08,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=A A2=B A3=D S0=B S1=C
+cb0b,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=B A3=D S0=B S1=C
+cbc8,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=A A2=B A3=B S0=B S1=C
+cbcb,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=B A3=B S0=B S1=C
+cc00,sky130_fd_sc_hd__and2_0,6.256,A=B B=D
+cc0a,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=D A3=B S0=D S1=C
+cc0c,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=B A2=B A3=D S0=B S1=C
+cc0f,sky130_fd_sc_hd__o2bb2ai_1,8.7584,A1_N=B A2_N=D B1=C B2=D
+cc22,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=D A3=B S0=D S1=B
+cc30,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=B A2=D A3=B S0=D S1=B
+cc33,sky130_fd_sc_hd__o2bb2ai_1,8.7584,A1_N=B A2_N=D B1=B B2=D
+cc44,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=B A3=D S0=A S1=B
+cc50,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=B A2=D A3=B S0=D S1=A
+cc55,sky130_fd_sc_hd__o2bb2ai_1,8.7584,A1_N=B A2_N=D B1=A B2=D
+cc80,sky130_fd_sc_hd__a32o_1,10.0096,A1=A A2=B A3=C B1=B B2=D
+cc88,sky130_fd_sc_hd__o21a_1,7.5072,A1=A A2=D B1=B
+cca0,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=C A3=B S0=D S1=A
+ccaa,sky130_fd_sc_hd__mux2_1,11.2608,A0=A A1=B S=D
+ccac,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=B A3=B S0=C S1=D
+ccaf,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=B A3=B S0=C S1=D
+ccb8,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=B A3=B S0=B S1=D
+ccbb,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=B A3=B S0=B S1=D
+ccc0,sky130_fd_sc_hd__o21a_1,7.5072,A1=C A2=D B1=B
+ccc8,sky130_fd_sc_hd__o31a_1,8.7584,A1=A A2=C A3=D B1=B
+ccca,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=B A3=B S0=C S1=D
+cccc,sky130_fd_sc_hd__buf_1,3.7536,A=B
+cccf,sky130_fd_sc_hd__o21bai_1,7.5072,A1=C A2=D B1_N=B
+ccd8,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=B A2=B A3=B S0=A S1=D
+ccdd,sky130_fd_sc_hd__o21bai_1,7.5072,A1=A A2=D B1_N=B
+cce2,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=C A3=B S0=D S1=B
+cce4,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=B A2=C A3=B S0=D S1=A
+ccee,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=B A3=B S0=B S1=D
+ccf0,sky130_fd_sc_hd__mux2_1,11.2608,A0=C A1=B S=D
+ccf3,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=C A3=B S0=D S1=B
+ccf5,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=C A3=B S0=D S1=A
+ccfa,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=C A3=B S0=D S1=C
+ccfc,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=B A2=C A3=B S0=D S1=C
+ccff,sky130_fd_sc_hd__nand2b_1,6.256,A_N=B B=D
+cd05,sky130_fd_sc_hd__o2bb2ai_1,8.7584,A1_N=B A2_N=D B1=A B2=C
+cdc8,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=B A2=B A3=B S0=A S1=C
+cdcd,sky130_fd_sc_hd__o21bai_1,7.5072,A1=A A2=C B1_N=B
+ce02,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=D A3=D S0=C S1=B
+ce0e,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=B A3=D S0=B S1=C
+cec2,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=D A3=B S0=C S1=B
+cec4,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=B A2=D A3=B S0=C S1=A
+cece,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=B A3=B S0=B S1=C
+cf00,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=D A2=D A3=B S0=C S1=D
+cf03,sky130_fd_sc_hd__o2bb2ai_1,8.7584,A1_N=B A2_N=D B1=B B2=C
+cf0a,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=D A2=D A3=B S0=C S1=D
+cf0c,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=D A2=D A3=B S0=C S1=D
+cf0f,sky130_fd_sc_hd__o2bb2ai_1,8.7584,A1_N=B A2_N=D B1=C B2=C
+cfa0,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=D A3=B S0=C S1=D
+cfaa,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=A A2=D A3=B S0=C S1=D
+cfac,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=D A3=B S0=C S1=D
+cfaf,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=D A3=B S0=C S1=D
+cfc0,sky130_fd_sc_hd__mux2_1,11.2608,A0=D A1=B S=C
+cfc3,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=D A3=B S0=C S1=B
+cfc5,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=D A3=B S0=C S1=A
+cfca,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=D A3=B S0=C S1=D
+cfcc,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=B A2=D A3=B S0=C S1=D
+cfcf,sky130_fd_sc_hd__nand2b_1,6.256,A_N=B B=C
+cff0,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=C A2=D A3=B S0=C S1=D
+cffa,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=C A2=D A3=B S0=C S1=D
+cffc,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=C A2=D A3=B S0=C S1=D
+cfff,sky130_fd_sc_hd__nand3b_1,7.5072,A_N=B B=C C=D
+d080,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=C A2=D A3=B S0=A S1=C
+d0d0,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=C A2=C A3=B S0=A S1=C
+d1c0,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=B A2=C A3=C S0=A S1=B
+d1d1,sky130_fd_sc_hd__o2bb2ai_1,8.7584,A1_N=B A2_N=C B1=A B2=B
+d484,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=C A2=D A3=B S0=A S1=C
+d490,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=B A2=D A3=C S0=A S1=B
+d4d4,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=C A2=C A3=B S0=A S1=C
+d580,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=B A2=D A3=C S0=A S1=B
+d585,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=C A2=D A3=B S0=A S1=C
+d591,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=D A3=C S0=A S1=B
+d5c4,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=B A2=B A3=C S0=A S1=B
+d5d0,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=C A2=C A3=B S0=A S1=C
+d5d5,sky130_fd_sc_hd__o2bb2ai_1,8.7584,A1_N=B A2_N=C B1=A B2=A
+d800,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=C A2=D A3=B S0=D S1=A
+d844,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=C A2=D A3=B S0=D S1=A
+d850,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=B A2=C A3=D S0=A S1=B
+d855,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=C A2=D A3=B S0=D S1=A
+d888,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=C A3=B S0=A S1=D
+d8a0,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=C A2=C A3=B S0=A S1=D
+d8aa,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=A A2=C A3=B S0=A S1=D
+d8cc,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=B A2=C A3=B S0=A S1=D
+d8d8,sky130_fd_sc_hd__mux2_1,11.2608,A0=C A1=B S=A
+d8dd,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=C A3=B S0=A S1=D
+d8e4,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=C A2=C A3=B S0=A S1=D
+d8ee,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=C A3=B S0=A S1=D
+d8f0,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=C A2=C A3=B S0=A S1=D
+d8f5,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=C A2=C A3=B S0=A S1=D
+d8fa,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=C A3=B S0=A S1=D
+d8ff,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=C A3=B S0=A S1=D
+d940,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=B A2=C A3=D S0=A S1=B
+d951,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=C A3=D S0=A S1=B
+d9c8,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=B A2=C A3=A S0=A S1=B
+d9d9,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=C A3=A S0=A S1=B
+da80,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=D A2=D A3=B S0=A S1=C
+da8a,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=A A2=D A3=B S0=A S1=C
+dad0,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=C A2=D A3=B S0=C S1=A
+dada,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=A A2=C A3=B S0=A S1=C
+dc10,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=B A2=D A3=D S0=A S1=B
+dc54,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=B A2=B A3=D S0=A S1=B
+dc8c,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=B A2=D A3=B S0=A S1=C
+dc98,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=B A2=D A3=A S0=A S1=B
+dcdc,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=B A2=C A3=B S0=A S1=C
+dd00,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=D A2=D A3=B S0=A S1=D
+dd11,sky130_fd_sc_hd__o2bb2ai_1,8.7584,A1_N=B A2_N=D B1=A B2=B
+dd44,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=D A2=D A3=B S0=A S1=D
+dd50,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=D A2=D A3=B S0=A S1=D
+dd55,sky130_fd_sc_hd__o2bb2ai_1,8.7584,A1_N=B A2_N=D B1=A B2=A
+dd88,sky130_fd_sc_hd__mux2_1,11.2608,A0=D A1=B S=A
+dd8d,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=D A3=B S0=A S1=C
+dd99,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=D A3=A S0=A S1=B
+dda0,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=C A2=D A3=B S0=A S1=D
+ddaa,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=A A2=D A3=B S0=A S1=D
+ddcc,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=B A2=D A3=B S0=A S1=D
+ddd8,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=B A2=D A3=B S0=A S1=D
+dddd,sky130_fd_sc_hd__nand2b_1,6.256,A_N=B B=A
+dde4,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=C A2=D A3=B S0=A S1=D
+ddee,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=D A3=B S0=A S1=D
+ddf0,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=C A2=D A3=B S0=A S1=D
+ddf5,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=C A2=D A3=B S0=A S1=D
+ddfa,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=D A3=B S0=A S1=D
+ddff,sky130_fd_sc_hd__nand3b_1,7.5072,A_N=B B=A C=D
+de84,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=D A2=D A3=B S0=A S1=C
+de8e,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=D A3=B S0=A S1=C
+ded4,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=C A2=D A3=B S0=C S1=A
+dede,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=C A3=B S0=A S1=C
+df80,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=D A2=D A3=B S0=A S1=C
+df85,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=D A2=D A3=B S0=A S1=C
+df8a,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=A A2=D A3=B S0=A S1=C
+df8f,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=D A3=B S0=A S1=C
+dfd0,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=C A2=D A3=B S0=C S1=A
+dfd5,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=C A2=D A3=B S0=C S1=A
+dfda,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=A A2=C A3=B S0=A S1=C
+dfdf,sky130_fd_sc_hd__nand3b_1,7.5072,A_N=B B=A C=C
+dfff,sky130_fd_sc_hd__nand4b_1,8.7584,A_N=B B=A C=C D=D
+e000,sky130_fd_sc_hd__o211a_1,10.0096,A1=A A2=B B1=C C1=D
+e020,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=C A3=D S0=C S1=B
+e040,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=C A3=D S0=C S1=A
+e0a0,sky130_fd_sc_hd__a32o_1,10.0096,A1=B A2=C A3=D B1=A B2=C
+e0c0,sky130_fd_sc_hd__a32o_1,10.0096,A1=A A2=C A3=D B1=B B2=C
+e0e0,sky130_fd_sc_hd__o21a_1,7.5072,A1=A A2=B B1=C
+e200,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=D A3=C S0=D S1=B
+e222,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=A A2=C A3=D S0=C S1=B
+e230,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=D A3=C S0=D S1=B
+e233,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=D A3=C S0=D S1=B
+e288,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=A A3=C S0=B S1=D
+e2aa,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=A A2=A A3=C S0=B S1=D
+e2b8,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=A A3=C S0=B S1=D
+e2bb,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=A A3=C S0=B S1=D
+e2c0,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=C A2=D A3=C S0=B S1=A
+e2cc,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=B A3=C S0=D S1=B
+e2e2,sky130_fd_sc_hd__mux2_1,11.2608,A0=A A1=C S=B
+e2ee,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=A A2=B A3=C S0=D S1=B
+e2f0,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=C A3=C S0=D S1=B
+e2f3,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=C A3=C S0=D S1=B
+e2fc,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=B A3=C S0=D S1=B
+e2ff,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=B A3=C S0=D S1=B
+e320,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=A A2=C A3=D S0=C S1=B
+e323,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=C A3=D S0=C S1=B
+e3e0,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=A A2=C A3=B S0=C S1=B
+e3e3,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=C A3=B S0=C S1=B
+e400,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=D A3=C S0=D S1=A
+e444,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=B A2=C A3=D S0=C S1=A
+e450,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=B A2=D A3=C S0=D S1=A
+e455,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=D A3=C S0=D S1=A
+e488,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=B A3=C S0=A S1=D
+e4a0,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=C A3=C S0=D S1=A
+e4aa,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=A A2=B A3=C S0=A S1=D
+e4cc,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=B A2=B A3=C S0=A S1=D
+e4d8,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=B A2=B A3=C S0=A S1=D
+e4dd,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=B A3=C S0=A S1=D
+e4e4,sky130_fd_sc_hd__mux2_1,11.2608,A0=B A1=C S=A
+e4ee,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=B A3=C S0=A S1=D
+e4f0,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=B A2=C A3=C S0=D S1=A
+e4f5,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=C A3=C S0=D S1=A
+e4fa,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=B A3=C S0=A S1=D
+e4ff,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=B A3=C S0=A S1=D
+e540,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=B A2=C A3=D S0=C S1=A
+e545,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=C A3=D S0=C S1=A
+e5e0,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=B A2=C A3=A S0=C S1=A
+e5e5,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=C A3=A S0=C S1=A
+e680,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=D A2=D A3=C S0=A S1=B
+e6a2,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=A A2=D A3=C S0=A S1=B
+e6c4,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=D A3=C S0=B S1=A
+e6e6,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=A A2=B A3=C S0=A S1=B
+e828,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=A A3=D S0=B S1=C
+e848,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=B A3=D S0=A S1=C
+e860,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=C A2=C A3=D S0=A S1=B
+e8e8,sky130_fd_sc_hd__maj3_1,10.0096,A=A B=B C=C
+ea00,sky130_fd_sc_hd__a32o_1,10.0096,A1=B A2=C A3=D B1=A B2=D
+ea2a,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=A A2=A A3=D S0=B S1=C
+ea40,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=D A3=D S0=C S1=A
+ea4a,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=A A2=B A3=D S0=A S1=C
+ea62,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=A A2=C A3=D S0=A S1=B
+eaaa,sky130_fd_sc_hd__a31o_1,8.7584,A1=B A2=C A3=D B1=A
+eac0,sky130_fd_sc_hd__a22o_1,8.7584,A1=A A2=D B1=B B2=C
+eac8,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=C A2=D A3=A S0=B S1=A
+eae0,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=D A3=A S0=C S1=A
+eaea,sky130_fd_sc_hd__a21o_1,7.5072,A1=B A2=C B1=A
+eb28,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=A A2=A A3=D S0=B S1=C
+eb2b,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=A A3=D S0=B S1=C
+ebe8,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=A A2=A A3=B S0=B S1=C
+ebeb,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=A A3=B S0=B S1=C
+ec00,sky130_fd_sc_hd__a32o_1,10.0096,A1=A A2=C A3=D B1=B B2=D
+ec20,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=C A2=D A3=D S0=A S1=B
+ec2c,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=B A3=D S0=C S1=B
+ec4c,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=B A2=B A3=D S0=A S1=C
+ec64,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=C A3=D S0=B S1=A
+eca0,sky130_fd_sc_hd__a22o_1,8.7584,A1=A A2=C B1=B B2=D
+eca8,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=C A2=D A3=A S0=A S1=B
+eccc,sky130_fd_sc_hd__a31o_1,8.7584,A1=A A2=C A3=D B1=B
+ece0,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=D A3=B S0=C S1=B
+ecec,sky130_fd_sc_hd__a21o_1,7.5072,A1=A A2=C B1=B
+ed48,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=B A2=B A3=D S0=A S1=C
+ed4d,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=B A3=D S0=A S1=C
+ede8,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=B A2=B A3=A S0=A S1=C
+eded,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=B A3=A S0=A S1=C
+ee00,sky130_fd_sc_hd__o21a_1,7.5072,A1=A A2=B B1=D
+ee22,sky130_fd_sc_hd__mux2_1,11.2608,A0=A A1=D S=B
+ee2e,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=A A2=B A3=D S0=C S1=B
+ee30,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=D A3=B S0=D S1=B
+ee33,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=D A3=B S0=D S1=B
+ee44,sky130_fd_sc_hd__mux2_1,11.2608,A0=B A1=D S=A
+ee4e,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=B A3=D S0=A S1=C
+ee50,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=B A2=D A3=A S0=D S1=A
+ee55,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=D A3=A S0=D S1=A
+ee66,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=A A2=B A3=D S0=A S1=B
+ee88,sky130_fd_sc_hd__maj3_1,10.0096,A=A B=B C=D
+eea0,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=C A3=A S0=D S1=A
+eeaa,sky130_fd_sc_hd__a21o_1,7.5072,A1=B A2=D B1=A
+eeb8,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=A A3=B S0=B S1=D
+eebb,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=A A3=B S0=B S1=D
+eec0,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=C A3=B S0=D S1=B
+eecc,sky130_fd_sc_hd__a21o_1,7.5072,A1=A A2=D B1=B
+eed8,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=B A2=B A3=A S0=A S1=D
+eedd,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=B A3=A S0=A S1=D
+eee0,sky130_fd_sc_hd__o22a_1,8.7584,A1=A A2=B B1=C B2=D
+eee2,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=A A2=C A3=B S0=D S1=B
+eee4,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=B A2=C A3=A S0=D S1=A
+eeea,sky130_fd_sc_hd__a221o_1,10.0096,A1=B A2=C B1=B B2=D C1=A
+eeec,sky130_fd_sc_hd__a221o_1,10.0096,A1=A A2=C B1=A B2=D C1=B
+eeee,sky130_fd_sc_hd__lpflow_inputiso1p_1,6.256,A=A SLEEP=B
+eef0,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=C A3=B S0=D S1=B
+eef3,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=C A3=B S0=D S1=B
+eef5,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=C A3=A S0=D S1=A
+eefa,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=B A3=A S0=A S1=D
+eefc,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=B A3=B S0=D S1=B
+eeff,sky130_fd_sc_hd__or3b_1,8.7584,A=A B=B C_N=D
+ef20,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=A A2=D A3=D S0=C S1=B
+ef23,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=D A3=D S0=C S1=B
+ef2c,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=A A2=B A3=D S0=C S1=B
+ef2f,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=B A3=D S0=C S1=B
+ef40,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=B A2=D A3=D S0=C S1=A
+ef45,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=D A3=D S0=C S1=A
+ef4a,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=A A2=B A3=D S0=A S1=C
+ef4f,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=B A3=D S0=A S1=C
+efe0,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=A A2=D A3=B S0=C S1=B
+efe3,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=D A3=B S0=C S1=B
+efe5,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=D A3=A S0=C S1=A
+efea,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=A A2=B A3=A S0=A S1=C
+efec,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=A A2=B A3=B S0=C S1=B
+efef,sky130_fd_sc_hd__or3b_1,8.7584,A=A B=B C_N=C
+efff,sky130_fd_sc_hd__nand4bb_1,11.2608,A_N=A B_N=B C=C D=D
+f000,sky130_fd_sc_hd__and2_0,6.256,A=C B=D
+f00a,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=C A2=D A3=C S0=D S1=C
+f00c,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=C A2=D A3=C S0=D S1=C
+f00f,sky130_fd_sc_hd__o2bb2ai_1,8.7584,A1_N=C A2_N=D B1=C B2=D
+f022,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=C A2=D A3=C S0=D S1=B
+f030,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=C A2=C A3=D S0=B S1=C
+f033,sky130_fd_sc_hd__o2bb2ai_1,8.7584,A1_N=C A2_N=D B1=B B2=D
+f044,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=C A2=D A3=C S0=D S1=A
+f050,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=C A2=C A3=D S0=A S1=C
+f055,sky130_fd_sc_hd__o2bb2ai_1,8.7584,A1_N=C A2_N=D B1=A B2=D
+f080,sky130_fd_sc_hd__a32o_1,10.0096,A1=A A2=B A3=C B1=C B2=D
+f088,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=C A3=C S0=A S1=D
+f0a0,sky130_fd_sc_hd__o21a_1,7.5072,A1=A A2=D B1=C
+f0aa,sky130_fd_sc_hd__mux2_1,11.2608,A0=A A1=C S=D
+f0ac,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=C A3=C S0=C S1=D
+f0af,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=C A3=C S0=C S1=D
+f0b8,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=C A3=C S0=B S1=D
+f0bb,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=C A3=C S0=B S1=D
+f0c0,sky130_fd_sc_hd__o21a_1,7.5072,A1=B A2=D B1=C
+f0ca,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=C A3=C S0=C S1=D
+f0cc,sky130_fd_sc_hd__mux2_1,11.2608,A0=B A1=C S=D
+f0cf,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=C A3=C S0=C S1=D
+f0d8,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=B A2=C A3=C S0=A S1=D
+f0dd,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=C A3=C S0=A S1=D
+f0e0,sky130_fd_sc_hd__o31a_1,8.7584,A1=A A2=B A3=D B1=C
+f0e2,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=C A2=C A3=C S0=B S1=D
+f0e4,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=C A2=C A3=C S0=A S1=D
+f0ee,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=C A3=C S0=B S1=D
+f0f0,sky130_fd_sc_hd__buf_1,3.7536,A=C
+f0f3,sky130_fd_sc_hd__o21bai_1,7.5072,A1=B A2=D B1_N=C
+f0f5,sky130_fd_sc_hd__o21bai_1,7.5072,A1=A A2=D B1_N=C
+f0fa,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=C A2=C A3=C S0=C S1=D
+f0fc,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=C A2=C A3=C S0=C S1=D
+f0ff,sky130_fd_sc_hd__nand2b_1,6.256,A_N=C B=D
+f111,sky130_fd_sc_hd__o2bb2ai_1,8.7584,A1_N=C A2_N=D B1=A B2=B
+f1e0,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=C A2=C A3=C S0=A S1=B
+f1f1,sky130_fd_sc_hd__o21bai_1,7.5072,A1=A A2=B B1_N=C
+f202,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=C A2=D A3=D S0=B S1=C
+f232,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=C A2=C A3=D S0=B S1=C
+f2c2,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=C A2=D A3=B S0=B S1=C
+f2d0,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=C A2=D A3=C S0=B S1=A
+f2f2,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=C A2=C A3=B S0=B S1=C
+f300,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=D A2=D A3=C S0=B S1=D
+f303,sky130_fd_sc_hd__o2bb2ai_1,8.7584,A1_N=C A2_N=D B1=B B2=C
+f322,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=D A2=D A3=C S0=B S1=D
+f330,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=D A2=D A3=C S0=B S1=D
+f333,sky130_fd_sc_hd__o2bb2ai_1,8.7584,A1_N=C A2_N=D B1=B B2=B
+f388,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=D A3=C S0=B S1=D
+f3aa,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=A A2=D A3=C S0=B S1=D
+f3b8,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=D A3=C S0=B S1=D
+f3bb,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=D A3=C S0=B S1=D
+f3c0,sky130_fd_sc_hd__mux2_1,11.2608,A0=D A1=C S=B
+f3c3,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=C A2=D A3=B S0=B S1=C
+f3cc,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=B A2=D A3=C S0=B S1=D
+f3d1,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=C A2=D A3=C S0=B S1=A
+f3e2,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=C A2=D A3=C S0=B S1=D
+f3ee,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=D A3=C S0=B S1=D
+f3f0,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=C A2=D A3=C S0=B S1=D
+f3f3,sky130_fd_sc_hd__nand2b_1,6.256,A_N=C B=B
+f3fc,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=B A2=D A3=C S0=B S1=D
+f3ff,sky130_fd_sc_hd__nand3b_1,7.5072,A_N=C B=B C=D
+f404,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=C A2=D A3=D S0=A S1=C
+f454,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=C A2=C A3=D S0=A S1=C
+f4a4,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=C A2=D A3=A S0=A S1=C
+f4b0,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=C A2=D A3=C S0=A S1=B
+f4f4,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=C A2=C A3=A S0=A S1=C
+f500,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=D A2=D A3=C S0=A S1=D
+f505,sky130_fd_sc_hd__o2bb2ai_1,8.7584,A1_N=C A2_N=D B1=A B2=C
+f544,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=D A2=D A3=C S0=A S1=D
+f550,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=D A2=D A3=C S0=A S1=D
+f555,sky130_fd_sc_hd__o2bb2ai_1,8.7584,A1_N=C A2_N=D B1=A B2=A
+f588,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=D A3=C S0=A S1=D
+f5a0,sky130_fd_sc_hd__mux2_1,11.2608,A0=D A1=C S=A
+f5a5,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=C A2=D A3=A S0=A S1=C
+f5aa,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=A A2=D A3=C S0=A S1=D
+f5b1,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=C A2=D A3=C S0=A S1=B
+f5cc,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=B A2=D A3=C S0=A S1=D
+f5d8,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=B A2=D A3=C S0=A S1=D
+f5dd,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=D A3=C S0=A S1=D
+f5e4,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=C A2=D A3=C S0=A S1=D
+f5ee,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=D A3=C S0=A S1=D
+f5f0,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=C A2=D A3=C S0=A S1=D
+f5f5,sky130_fd_sc_hd__nand2b_1,6.256,A_N=C B=A
+f5fa,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=D A3=C S0=A S1=D
+f5ff,sky130_fd_sc_hd__nand3b_1,7.5072,A_N=C B=A C=D
+f690,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=D A2=D A3=C S0=A S1=B
+f6b2,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=D A3=C S0=A S1=B
+f6d4,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=B A2=D A3=C S0=B S1=A
+f6f6,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=B A3=C S0=A S1=B
+f780,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=D A2=D A3=C S0=A S1=B
+f791,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=D A2=D A3=C S0=A S1=B
+f7a2,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=A A2=D A3=C S0=A S1=B
+f7b3,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=D A3=C S0=A S1=B
+f7c4,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=B A2=D A3=C S0=B S1=A
+f7d5,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=D A3=C S0=B S1=A
+f7e6,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=A A2=B A3=C S0=A S1=B
+f7f7,sky130_fd_sc_hd__nand3b_1,7.5072,A_N=C B=A C=B
+f7ff,sky130_fd_sc_hd__nand4b_1,8.7584,A_N=C B=A C=B D=D
+f800,sky130_fd_sc_hd__a32o_1,10.0096,A1=A A2=B A3=D B1=C B2=D
+f808,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=D A3=D S0=A S1=C
+f838,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=C A3=D S0=B S1=C
+f858,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=C A3=D S0=A S1=C
+f870,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=C A2=C A3=D S0=A S1=B
+f888,sky130_fd_sc_hd__a22o_1,8.7584,A1=A A2=B B1=C B2=D
+f8a8,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=D A3=A S0=A S1=C
+f8c8,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=D A3=B S0=B S1=C
+f8f0,sky130_fd_sc_hd__a31o_1,8.7584,A1=A A2=B A3=D B1=C
+f8f8,sky130_fd_sc_hd__a21o_1,7.5072,A1=A A2=B B1=C
+f960,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=C A2=C A3=D S0=A S1=B
+f971,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=C A2=C A3=D S0=A S1=B
+f9e8,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=C A2=C A3=A S0=A S1=B
+f9f9,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=C A2=C A3=A S0=A S1=B
+fa00,sky130_fd_sc_hd__o21a_1,7.5072,A1=A A2=C B1=D
+fa0a,sky130_fd_sc_hd__mux2_1,11.2608,A0=A A1=D S=C
+fa0c,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=D A3=C S0=D S1=C
+fa0f,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=D A3=C S0=D S1=C
+fa3a,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=A A2=C A3=D S0=B S1=C
+fa44,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=C A2=D A3=A S0=D S1=A
+fa50,sky130_fd_sc_hd__mux2_1,11.2608,A0=C A1=D S=A
+fa55,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=C A2=D A3=A S0=D S1=A
+fa5a,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=A A2=C A3=D S0=A S1=C
+fa72,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=C A3=D S0=A S1=B
+fa88,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=C A3=A S0=A S1=D
+faa0,sky130_fd_sc_hd__maj3_1,10.0096,A=A B=C C=D
+faaa,sky130_fd_sc_hd__a21o_1,7.5072,A1=C A2=D B1=A
+faac,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=A A3=C S0=C S1=D
+faaf,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=A A3=C S0=C S1=D
+fac0,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=B A3=C S0=D S1=C
+fac8,sky130_fd_sc_hd__o22a_1,8.7584,A1=A A2=C B1=B B2=D
+faca,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=A A2=B A3=C S0=D S1=C
+facc,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=B A3=C S0=D S1=C
+facf,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=B A3=C S0=D S1=C
+fad8,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=B A2=C A3=A S0=A S1=D
+fadd,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=C A3=A S0=A S1=D
+fae4,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=C A2=C A3=A S0=A S1=D
+faea,sky130_fd_sc_hd__a221o_1,10.0096,A1=B A2=C B1=C B2=D C1=A
+faee,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=C A3=A S0=A S1=D
+faf0,sky130_fd_sc_hd__a21o_1,7.5072,A1=A A2=D B1=C
+faf5,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=C A2=C A3=A S0=A S1=D
+faf8,sky130_fd_sc_hd__a221o_1,10.0096,A1=A A2=B B1=A B2=D C1=C
+fafa,sky130_fd_sc_hd__lpflow_inputiso1p_1,6.256,A=A SLEEP=C
+fafc,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=C A3=C S0=D S1=C
+faff,sky130_fd_sc_hd__or3b_1,8.7584,A=A B=C C_N=D
+fb08,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=A A2=D A3=D S0=B S1=C
+fb0b,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=D A3=D S0=B S1=C
+fb38,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=A A2=C A3=D S0=B S1=C
+fb3b,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=C A3=D S0=B S1=C
+fb40,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=C A2=D A3=D S0=B S1=A
+fb51,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=C A2=D A3=D S0=B S1=A
+fb62,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=A A2=C A3=D S0=A S1=B
+fb73,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=C A3=D S0=A S1=B
+fbc8,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=A A2=D A3=B S0=B S1=C
+fbcb,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=D A3=B S0=B S1=C
+fbd9,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=C A2=D A3=A S0=B S1=A
+fbea,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=A A2=C A3=A S0=A S1=B
+fbf8,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=A A2=C A3=B S0=B S1=C
+fbfb,sky130_fd_sc_hd__or3b_1,8.7584,A=A B=C C_N=B
+fbff,sky130_fd_sc_hd__nand4bb_1,11.2608,A_N=A B_N=C C=B D=D
+fc00,sky130_fd_sc_hd__o21a_1,7.5072,A1=B A2=C B1=D
+fc0a,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=D A3=C S0=D S1=C
+fc0c,sky130_fd_sc_hd__mux2_1,11.2608,A0=B A1=D S=C
+fc0f,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=D A3=C S0=D S1=C
+fc22,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=C A2=D A3=B S0=D S1=B
+fc30,sky130_fd_sc_hd__mux2_1,11.2608,A0=C A1=D S=B
+fc33,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=C A2=D A3=B S0=D S1=B
+fc3c,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=B A2=C A3=D S0=B S1=C
+fc5c,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=B A2=C A3=D S0=A S1=C
+fc74,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=B A2=C A3=D S0=B S1=A
+fc88,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=C A3=B S0=B S1=D
+fca0,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=B A3=C S0=C S1=D
+fca8,sky130_fd_sc_hd__o22a_1,8.7584,A1=A A2=D B1=B B2=C
+fcaa,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=A A2=B A3=C S0=C S1=D
+fcac,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=B A3=C S0=C S1=D
+fcaf,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=B A3=C S0=C S1=D
+fcb8,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=C A3=B S0=B S1=D
+fcbb,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=A A2=C A3=B S0=B S1=D
+fcc0,sky130_fd_sc_hd__maj3_1,10.0096,A=B B=C C=D
+fcca,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=B A3=C S0=C S1=D
+fccc,sky130_fd_sc_hd__a21o_1,7.5072,A1=C A2=D B1=B
+fccf,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=B A3=C S0=C S1=D
+fce2,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=C A2=C A3=B S0=B S1=D
+fcec,sky130_fd_sc_hd__a221o_1,10.0096,A1=A A2=C B1=C B2=D C1=B
+fcee,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=C A3=B S0=B S1=D
+fcf0,sky130_fd_sc_hd__a21o_1,7.5072,A1=B A2=D B1=C
+fcf3,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=C A2=C A3=B S0=B S1=D
+fcf8,sky130_fd_sc_hd__a221o_1,10.0096,A1=A A2=B B1=B B2=D C1=C
+fcfa,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=C A3=C S0=D S1=C
+fcfc,sky130_fd_sc_hd__lpflow_inputiso1p_1,6.256,A=B SLEEP=C
+fcff,sky130_fd_sc_hd__or3b_1,8.7584,A=B B=C C_N=D
+fd08,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=B A2=D A3=D S0=A S1=C
+fd0d,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=D A3=D S0=A S1=C
+fd20,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=C A2=D A3=D S0=A S1=B
+fd31,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=C A2=D A3=D S0=A S1=B
+fd58,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=B A2=C A3=D S0=A S1=C
+fd5d,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=C A3=D S0=A S1=C
+fd64,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=B A2=C A3=D S0=B S1=A
+fd75,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=C A3=D S0=B S1=A
+fda8,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=B A2=D A3=A S0=A S1=C
+fdad,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=B A2=D A3=A S0=A S1=C
+fdb9,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=C A2=D A3=A S0=A S1=B
+fdec,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=B A2=C A3=A S0=B S1=A
+fdf8,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=B A2=C A3=A S0=A S1=C
+fdfd,sky130_fd_sc_hd__or3b_1,8.7584,A=B B=C C_N=A
+fdff,sky130_fd_sc_hd__nand4bb_1,11.2608,A_N=B B_N=C C=A D=D
+fe00,sky130_fd_sc_hd__o31a_1,8.7584,A1=A A2=B A3=C B1=D
+fe02,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=D A2=D A3=D S0=B S1=C
+fe04,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=D A2=D A3=D S0=A S1=C
+fe0e,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=D A3=D S0=B S1=C
+fe10,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=D A2=D A3=D S0=A S1=B
+fe32,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=C A2=D A3=D S0=C S1=B
+fe3e,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=C A3=D S0=B S1=C
+fe54,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=C A2=D A3=D S0=C S1=A
+fe5e,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=C A3=D S0=A S1=C
+fe76,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=B A3=D S0=A S1=B
+fe98,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=D A2=D A3=A S0=A S1=B
+fea4,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=D A2=D A3=A S0=A S1=C
+feaa,sky130_fd_sc_hd__a221o_1,10.0096,A1=B A2=D B1=C B2=D C1=A
+feae,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=D A3=A S0=A S1=C
+feba,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=D A3=A S0=A S1=B
+fec2,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=D A2=D A3=B S0=B S1=C
+fecc,sky130_fd_sc_hd__a221o_1,10.0096,A1=A A2=D B1=C B2=D C1=B
+fece,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=D A3=B S0=B S1=C
+fedc,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=B A2=D A3=A S0=B S1=A
+feee,sky130_fd_sc_hd__a211o_1,8.7584,A1=C A2=D B1=A C1=B
+fef0,sky130_fd_sc_hd__a221o_1,10.0096,A1=A A2=D B1=B B2=D C1=C
+fef2,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=C A2=D A3=B S0=C S1=B
+fef4,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=C A2=D A3=A S0=C S1=A
+fefa,sky130_fd_sc_hd__a211o_1,8.7584,A1=B A2=D B1=A C1=C
+fefc,sky130_fd_sc_hd__a211o_1,8.7584,A1=A A2=D B1=B C1=C
+fefe,sky130_fd_sc_hd__or3_1,6.256,A=A B=B C=C
+feff,sky130_fd_sc_hd__or4b_1,10.0096,A=A B=B C=C D_N=D
+ff00,sky130_fd_sc_hd__buf_1,3.7536,A=D
+ff03,sky130_fd_sc_hd__o21bai_1,7.5072,A1=B A2=C B1_N=D
+ff05,sky130_fd_sc_hd__o21bai_1,7.5072,A1=A A2=C B1_N=D
+ff0a,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=D A2=D A3=C S0=C S1=D
+ff0c,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=D A2=D A3=C S0=C S1=D
+ff0f,sky130_fd_sc_hd__nand2b_1,6.256,A_N=D B=C
+ff11,sky130_fd_sc_hd__o21bai_1,7.5072,A1=A A2=B B1_N=D
+ff22,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=D A2=D A3=B S0=B S1=D
+ff30,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=D A2=D A3=B S0=B S1=D
+ff33,sky130_fd_sc_hd__nand2b_1,6.256,A_N=D B=B
+ff3c,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=B A2=C A3=D S0=B S1=C
+ff3f,sky130_fd_sc_hd__nand3b_1,7.5072,A_N=D B=B C=C
+ff44,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=D A2=D A3=A S0=A S1=D
+ff50,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=D A2=D A3=A S0=A S1=D
+ff55,sky130_fd_sc_hd__nand2b_1,6.256,A_N=D B=A
+ff5a,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=A A2=C A3=D S0=A S1=C
+ff5f,sky130_fd_sc_hd__nand3b_1,7.5072,A_N=D B=A C=C
+ff66,sky130_fd_sc_hd__mux4_2,22.5216,A0=D A1=A A2=B A3=D S0=A S1=B
+ff77,sky130_fd_sc_hd__nand3b_1,7.5072,A_N=D B=A C=B
+ff7f,sky130_fd_sc_hd__nand4b_1,8.7584,A_N=D B=A C=B D=C
+ff80,sky130_fd_sc_hd__a31o_1,8.7584,A1=A A2=B A3=C B1=D
+ff88,sky130_fd_sc_hd__a21o_1,7.5072,A1=A A2=B B1=D
+ff99,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=D A2=D A3=A S0=A S1=B
+ffa0,sky130_fd_sc_hd__a21o_1,7.5072,A1=A A2=C B1=D
+ffa5,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=D A2=D A3=A S0=A S1=C
+ffa8,sky130_fd_sc_hd__a221o_1,10.0096,A1=A A2=B B1=A B2=C C1=D
+ffaa,sky130_fd_sc_hd__lpflow_inputiso1p_1,6.256,A=A SLEEP=D
+ffac,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=A A2=D A3=C S0=C S1=D
+ffaf,sky130_fd_sc_hd__or3b_1,8.7584,A=A B=D C_N=C
+ffb8,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=A A2=D A3=B S0=B S1=D
+ffbb,sky130_fd_sc_hd__or3b_1,8.7584,A=A B=D C_N=B
+ffbf,sky130_fd_sc_hd__nand4bb_1,11.2608,A_N=A B_N=D C=B D=C
+ffc0,sky130_fd_sc_hd__a21o_1,7.5072,A1=B A2=C B1=D
+ffc3,sky130_fd_sc_hd__mux4_2,22.5216,A0=1 A1=D A2=D A3=B S0=B S1=C
+ffc8,sky130_fd_sc_hd__a221o_1,10.0096,A1=A A2=B B1=B B2=C C1=D
+ffca,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=B A2=D A3=C S0=C S1=D
+ffcc,sky130_fd_sc_hd__lpflow_inputiso1p_1,6.256,A=B SLEEP=D
+ffcf,sky130_fd_sc_hd__or3b_1,8.7584,A=B B=D C_N=C
+ffd8,sky130_fd_sc_hd__mux4_2,22.5216,A0=C A1=B A2=D A3=A S0=A S1=D
+ffdd,sky130_fd_sc_hd__or3b_1,8.7584,A=B B=D C_N=A
+ffdf,sky130_fd_sc_hd__nand4bb_1,11.2608,A_N=B B_N=D C=A D=C
+ffe0,sky130_fd_sc_hd__a221o_1,10.0096,A1=A A2=C B1=B B2=C C1=D
+ffe2,sky130_fd_sc_hd__mux4_2,22.5216,A0=A A1=C A2=D A3=B S0=B S1=D
+ffe4,sky130_fd_sc_hd__mux4_2,22.5216,A0=B A1=C A2=D A3=A S0=A S1=D
+ffea,sky130_fd_sc_hd__a211o_1,8.7584,A1=B A2=C B1=A C1=D
+ffec,sky130_fd_sc_hd__a211o_1,8.7584,A1=A A2=C B1=B C1=D
+ffee,sky130_fd_sc_hd__or3_1,6.256,A=A B=B C=D
+ffef,sky130_fd_sc_hd__or4b_1,10.0096,A=A B=B C=D D_N=C
+fff0,sky130_fd_sc_hd__lpflow_inputiso1p_1,6.256,A=C SLEEP=D
+fff3,sky130_fd_sc_hd__or3b_1,8.7584,A=C B=D C_N=B
+fff5,sky130_fd_sc_hd__or3b_1,8.7584,A=C B=D C_N=A
+fff7,sky130_fd_sc_hd__nand4bb_1,11.2608,A_N=C B_N=D C=A D=B
+fff8,sky130_fd_sc_hd__a211o_1,8.7584,A1=A A2=B B1=C C1=D
+fffa,sky130_fd_sc_hd__or3_1,6.256,A=A B=C C=D
+fffb,sky130_fd_sc_hd__or4b_1,10.0096,A=A B=C C=D D_N=B
+fffc,sky130_fd_sc_hd__or3_1,6.256,A=B B=C C=D
+fffd,sky130_fd_sc_hd__or4b_1,10.0096,A=B B=C C=D D_N=A
+fffe,sky130_fd_sc_hd__or4_1,7.5072,A=A B=B C=C D=D
+ffff,sky130_fd_sc_hd__buf_1,3.7536,A=1
