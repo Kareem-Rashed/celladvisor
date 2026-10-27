@@ -27,6 +27,9 @@ check:            ## tool versions, PDK, and the ngspice stress test for Option 
 test:             ## every test, including the broken cases in tests/broken/
 	python3 tests/test_canon.py
 	python3 tests/test_hdlib.py
+	python3 tests/test_aig_reader.py
+	python3 tests/test_cuts.py
+
 
 all:              ## the whole flow
 	@echo "not written yet" && exit 1
