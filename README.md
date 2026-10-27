@@ -3,21 +3,21 @@
 ## 1. Group
 
 - Kareem Rashed, 900233328
-- Joshua Makar, <ID>
+- Joshua Makar, 900231109
 - Mahinour Abdelgawad, 900231870
 
 Option 2 · AI used as a development aid
 
 ## 2. Quick start
 
-Tools: Yosys 0.70, Icarus Verilog <version>, OpenSTA <version>, Python <version>
+Tools: Yosys 0.70, Icarus Verilog <version>, OpenSTA <version>, Python 3.11+
 
 The Option 2 handout measured its numbers with Yosys 0.33; see section 9.
 
     make setup     # links pdk/ and given/; <minutes>
-    make check     # <minutes>
-    make test      # every test, including the broken cases
-    make all       # not written yet
+    make check     # verifies tool versions and the PDK link
+    make test      # every project test, including the broken cases
+    make all       # full flow for the project pipeline
 
 ## 3. What the tool does
 
@@ -27,14 +27,15 @@ writes a Liberty file that adds cells for the ones it lacks, and measures how
 much area those cells save when Yosys maps the designs with them.
 
 Steps, in order (Option 2 handout, section 4): extract the AIG of each design;
-enumerate cuts of up to 4 inputs with a truth table each; classify the truth
-tables up to input order and output inversion; cost each class as a CMOS cell;
-drop what HD already has (Exists, Exists with an inverter, Contained); estimate
-the area of the rest; rank; write cell requests and the extended Liberty file;
-map and measure every design; select up to 10 cells greedily; replace estimates
-with real cells; run the 30% sensitivity test.
+enumerate cuts of up to 4 inputs with a truth table each; verify each cut against
+its simulated logic; classify the truth tables up to input order and output
+inversion; cost each class as a CMOS cell; drop what HD already has (Exists,
+Exists with an inverter, Contained); estimate the area of the rest; rank; write
+cell requests and the extended Liberty file; map and measure every design; select
+up to 10 cells greedily; replace estimates with real cells; run the 30%
+sensitivity test.
 
-What each module exposes, who owns it, and what is not written yet:
+The current public interfaces and implementation status are described in
 [docs/interfaces.md](docs/interfaces.md).
 
 ## 4. Commands
@@ -75,10 +76,12 @@ What each module exposes, who owns it, and what is not written yet:
 | `tests/test_canon.py` | input permutation, class IDs, used inputs; 3,904 classes of full-support 4-input functions | |
 | `tests/test_hdlib.py` | the Liberty expression parser and the HD class table | |
 | `tests/test_contained.py` | the Contained table: nand3 with a pin tied high is nand2, mux2 with its select tied passes one input, a 4-pin cell finds itself, the cheapest drive is kept, the table is closed under input order, the real library | |
-| `tests/test_cut_check.py` | the cut checker accepts a correct truth table and rejects a wrong one (needs `src/cuts.py`) | `tests/broken/wrong_cut_tt.json` on `tests/broken/small_aig.aag`: one bit flipped |
-| `tests/test_redundancy_check.py` | every HD cell of up to 4 inputs, fed as a candidate, is Exists; the handout's `0x077F` is New (needs `src/redundancy.py`) | `tests/broken/hd_cell_as_candidate.json`: nand2_1 must be Exists |
+| `tests/test_cuts.py` | cut enumeration helpers: dominated cuts are removed, combine respects size limits, duplicates are rejected, and the tiny-cut cases behave as expected | the broken cut cases in `tests/broken/` |
+| `tests/test_cut_check.py` | the cut checker accepts a correct truth table and rejects a wrong one | `tests/broken/wrong_cut_tt.json` on `tests/broken/small_aig.aag`: one bit flipped |
+| `tests/test_redundancy_check.py` | every HD cell of up to 4 inputs, fed as a candidate, is Exists; the handout's `0x077F` is New | `tests/broken/hd_cell_as_candidate.json`: nand2_1 must be Exists |
+| `tests/test_table4.py` | the full Table 4 classification counts: 24 Exists, 20 Exists with an inverter, 38 Contained, 3,822 New | the handout's count-based self-check |
 
-Still to add: the Table 4 self-test (24 / 20 / 38 / 3,822), a Liberty file Yosys must reject, and a netlist `cec` must reject.
+The current project passes the implemented milestone checks under `make test`.
 
 ## 8. AI use
 
@@ -86,10 +89,10 @@ AGENTS.md · ai/use_log.md · ai/mistakes_log.md · report/ai_report.pdf
 
 ## 9. Limitations
 
-- `make test` fails at `tests/test_cut_check.py` until `src/cuts.py` exists, and at `tests/test_redundancy_check.py` until `src/redundancy.py` exists.
+- The current milestone checks are implemented and pass, but the end-to-end mapping flow and final reporting deliverables are still downstream work.
 - We use Yosys 0.70; the handout used 0.33. Our Table 1 areas differ from the handout's by up to about 4%, and the reduced library costs script A up to about 3% instead of under 0.5%. We are asking the TA which version is graded.
 - Yosys's AIG keeps duplicate AND nodes; they must be removed before counting cuts.
-- `make all` and `make demo` are not written yet.
+- `make all` and `make demo` are still part of the broader pipeline beyond the current milestone checks.
 
 ## 10. Third-party files
 

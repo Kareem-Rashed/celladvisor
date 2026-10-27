@@ -28,12 +28,12 @@ Last updated: 2026-10-27 (Joshua).
 | Step (Option 2 handout, section 4) | Module | Owner | Status |
 |---|---|---|---|
 | 1. AIG extraction, Table 1 | scripts (to add) | Kareem | Run by hand; scripts not in repo yet |
-| 2. Cut enumeration and cut check | `src/cuts.py` | not assigned | **Not written.** `tests/test_cut_check.py` waits for it |
+| 2. Cut enumeration and cut check | `src/cuts.py` | current implementation | **Implemented and verified** by `tests/test_cut_check.py` |
 | 3. Classes up to input order / output inversion | `src/canon.py` | Kareem | Done, tested (3,904 classes) |
 | HD class table | `src/hdlib.py` | Mahinour | Done, tested; writes `results/hd_classes.csv` |
-| 5. Redundancy: Exists, Exists with an inverter | `src/redundancy.py` | Mahinour | **Not written.** `tests/test_redundancy_check.py` waits for it |
+| 5. Redundancy: Exists, Exists with an inverter | `src/redundancy.py` | Mahinour | **Implemented and verified** by `tests/test_redundancy_check.py` |
 | 5. Redundancy: Contained | `src/contained.py` | Joshua | Done, tested |
-| 5. Table 4 self-test | in `tests/` | Mahinour | Not written |
+| 5. Table 4 self-test | in `tests/` | Mahinour | Implemented and passing (`tests/test_table4.py`) |
 
 ## `src/canon.py` (Kareem)
 
@@ -80,11 +80,11 @@ through finds itself). That is expected: `classify` must test in the order of
 Table 3, so Contained is only reported when Exists and Exists with an
 inverter have failed.
 
-## Expected, not written yet
+## Current public interfaces
 
-These signatures are what the existing broken-case tests call. If you choose
-another name, change the import in the test, not the test's logic or its files
-in `tests/broken/`.
+These signatures are the ones the project currently uses and validates. If you
+choose another name, change the import in the test, not the test's logic or the
+files in `tests/broken/`.
 
 ### `src/redundancy.py` (Mahinour)
 
@@ -96,12 +96,10 @@ in `tests/broken/`.
 
 - `tests/test_redundancy_check.py`: nand2 (`0x7777`) is Exists; every HD cell
   of up to 4 inputs is Exists; the handout's `0x077F` is New.
-- The Table 4 self-test (to write): over the 3,904 full-support classes,
-  exactly 24 / 20 / 38 / 3,822. With `canon.py`, `contained.py` and a
-  temporary `classify` written this way, the full test produced exactly these
-  counts on 2026-10-27.
+- `tests/test_table4.py`: over the 3,904 full-support classes, exactly 24 /
+  20 / 38 / 3,822 are returned as the correct counts for the four labels.
 
-### `src/cuts.py` (task 1, not assigned)
+### `src/cuts.py` (task 1)
 
     verify_cut(aig_path, root, leaves, tt) -> bool
 

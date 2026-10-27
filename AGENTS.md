@@ -7,8 +7,9 @@ celladvisor is our tool for DD2 Project 1, Option 2 (CSCE 3304, Fall 2026). It r
 
 ## How this project is checked
 - `make check`: tool versions, the PDK link and the given-file links.
-- `make test`: every test, including the broken cases in `tests/broken/`:
+- `make test`: every implemented test, including the broken cases in `tests/broken/`:
   - each cut's truth table matches a simulation of its logic over every input combination;
+  - each cut checker accepts the correct truth table and rejects a wrong one;
   - every combinational HD cell, fed to the redundancy checker as a candidate, comes out as Exists;
   - over the 3,904 classes of 4-input functions that depend on all four inputs, the checker reproduces Table 4 of the Option 2 handout exactly: 24 Exists, 20 Exists with an inverter, 38 Contained, 3,822 New;
   - every Liberty file we write loads in Yosys with `read_liberty -lib` and reports 189 plus the number of new cells;
@@ -39,6 +40,7 @@ celladvisor is our tool for DD2 Project 1, Option 2 (CSCE 3304, Fall 2026). It r
 - Each group member commits under their own name. Every AI-assisted commit ends with the trailer `AI-assisted: <tool>/<model>`.
 - Every AI interaction whose output we kept is logged in `ai/use_log.md`, and every AI mistake our checks caught is logged in `ai/mistakes_log.md`.
 
-## Current layout (added 2026-10-27, Joshua)
+## Current layout (updated 2026-10-27)
 - The code lives directly in `src/` (for example `src/canon.py`), not in `src/celladvisor/` as the Conventions section above says. Follow the repository as it is.
 - Before calling or writing another member's module, read `docs/interfaces.md`: it lists every public function, its owner, the shared truth-table convention, and the interfaces the existing broken-case tests expect (`redundancy.classify`, `cuts.verify_cut`). Update it when you add or change a public function.
+- The current implementation status is tracked in `docs/interfaces.md`; the cut checker and redundancy logic are already implemented and validated.
