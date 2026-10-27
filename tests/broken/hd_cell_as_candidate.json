@@ -1,0 +1,7 @@
+{
+  "why": "An HD cell fed to the redundancy checker as if it were a new candidate. The checker must answer Exists, never New.",
+  "cell": "sky130_fd_sc_hd__nand2_1",
+  "function": "!(A & B)",
+  "truth_table": "0x7777",
+  "expected": "Exists"
+}

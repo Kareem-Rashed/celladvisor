@@ -1,0 +1,9 @@
+{
+  "why": "Broken case for the cut checker: the claimed truth table has bit 0 flipped. The checker must reject it.",
+  "aig": "small_aig.aag",
+  "circuit": "y = (a & b) | c; AND node 4 = a & b, AND node 5 = !node4 & !c, output y = !node5",
+  "root": 5,
+  "leaves": [1, 2, 3],
+  "correct_truth_table": "0x0707",
+  "wrong_truth_table": "0x0706"
+}
