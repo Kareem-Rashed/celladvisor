@@ -28,6 +28,8 @@ def combine(left_cuts, right_cuts):
 def enumerate_cuts(sources, ands):
     cuts = {}
 
+    cuts[0] = [frozenset()]
+
     for s in sources:  
         cuts[s] = [frozenset([s])]
 
