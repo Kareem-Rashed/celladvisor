@@ -64,3 +64,7 @@ SPICE ?= pdk/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
 
 area-model:       ## step 6: area model fitted on HD x1 cells, with its error
 	python3 src/areamodel.py $(HD_LIB) $(SPICE)
+
+
+rank:             ## step 7: rank candidates by estimated saving
+	python3 src/rank.py
