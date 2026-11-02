@@ -26,8 +26,8 @@ def test_maj4n_example():
     f = inv((C & D) | (A & B & (C | D)))
     assert cost(f) == (12, True)
 
-def test_depth_limit():
-    assert cost(inv(A & B & C & D))[1] is False          # nand4 needs 4 in series
+def test_nand4_is_single_stage():
+    assert cost(inv(A & B & C & D)) == (8, True)   # 4 in series, but areamodel says single
 
 def test_xor_is_rough_but_multistage():
     t, s = cost(A ^ B)
@@ -42,6 +42,11 @@ def test_all_tts_run():
         assert t >= 0
     assert time.time() - t0 < 60
 
+
+def test_matches_areamodel_definition():
+    from areamodel import is_single_stage
+    for tt in range(65536):
+        assert cost(tt)[1] == is_single_stage(tt, 4), hex(tt)
 
 
 if __name__ == "__main__":

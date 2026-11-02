@@ -50,6 +50,11 @@ def flip(tt, i):
     return (((tt & VAR[i]) >> sh) | ((tt & ~VAR[i] & MASK) << sh)) & MASK
 
 
+def is_single_stage(tt, k):
+    from areamodel import is_single_stage
+    return is_single_stage(tt, k)
+
+
 @lru_cache(maxsize=None) #least recenty used
 def _single_table():
     """
@@ -101,29 +106,27 @@ def _positive_table():
 
 
 def cost(tt):
-    """
-    Return (transistors, single_stage) for a 16-bit truth table
-    """
     tt &= MASK
+    single_stage = is_single_stage(tt, 4)
     sup = support(tt)
     if not sup:
-        return (0, False) # constant. no cell needed
-    nf = ~tt & MASK
-    single = _single_table()
-    if nf in single: # f = !g, g positive, depth ok
-        return (2 * single[nf], True)
+        return (0, single_stage) # constant: no cell needed
 
-    # rough multi-stage estimate 
     pos = _positive_table()
+    nf = ~tt & MASK
+    if single_stage: # f = !g, g = !f is positive
+        return (2 * pos[nf], True)
+
+    # rough multi-stage estimate
     est = []
     for k in range(len(sup) + 1):
         for S in combinations(sup, k):
             g1, g2 = nf, tt
             for i in S:
                 g1, g2 = flip(g1, i), flip(g2, i)
-            if g1 in pos: # f = !g1
+            if g1 in pos:
                 est.append(2 * pos[g1] + 2 * k)
-            if g2 in pos: # f = inverter(!g2)
+            if g2 in pos:
                 est.append(2 * pos[g2] + 2 * k + 2)
     if est:
         return (min(est), False)
