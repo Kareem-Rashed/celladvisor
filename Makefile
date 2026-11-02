@@ -32,6 +32,7 @@ test:             ## every test, including the broken cases in tests/broken/
 	python3 tests/test_cut_check.py
 	python3 tests/test_redundancy_check.py
 	python3 tests/test_table4.py
+	python3 tests/test_cost.py
 
 cuts:             ## step 2: cut counts for every design, before and after ABC
 	python3 src/run_cuts.py
