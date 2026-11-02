@@ -36,6 +36,9 @@ test:             ## every test, including the broken cases in tests/broken/
 cuts:             ## step 2: cut counts for every design, before and after ABC
 	python3 src/run_cuts.py
 
+candidates:       ## steps 2, 3, 5: classes per design, frequency, Table 3 label
+	python3 src/candidates.py
+
 all: aigs table1 hd-table contained-table   ## the flow so far, one target per step
 
 aigs:             ## step 1: AIGs of every required design, raw / strash / after ABC
@@ -57,3 +60,7 @@ hd-table:
 contained-table:
 	python3 src/contained.py $(HD_LIB) results/contained_table.csv	
 
+SPICE ?= pdk/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+
+area-model:       ## step 6: area model fitted on HD x1 cells, with its error
+	python3 src/areamodel.py $(HD_LIB) $(SPICE)
