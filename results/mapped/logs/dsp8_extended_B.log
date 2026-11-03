@@ -1,0 +1,66 @@
+
+6. Printing statistics.
+
+=== dsp8 ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+      776        - wires
+      857        - wire bits
+       15        - public wires
+       96        - public wire bits
+        9        - ports
+       48        - port bits
+      834 6.16E+03 cells
+       13   97.594   dd2_gb3__c001f_1
+        3   22.522   dd2_gb3__c00af_1
+        1   11.261   dd2_gb3__c88a8_1
+        3   26.275   dd2_gb3__c88aa_1
+       10   75.072   sky130_fd_sc_hd__a211oi_1
+        1    7.507   sky130_fd_sc_hd__a21boi_1
+        1    7.507   sky130_fd_sc_hd__a21o_1
+       88  440.422   sky130_fd_sc_hd__a21oi_1
+        8   70.067   sky130_fd_sc_hd__a221oi_1
+        4   35.034   sky130_fd_sc_hd__a22o_1
+       10   75.072   sky130_fd_sc_hd__a22oi_1
+        2   17.517   sky130_fd_sc_hd__a311oi_1
+        5    31.28   sky130_fd_sc_hd__a31oi_1
+        1    10.01   sky130_fd_sc_hd__a32o_1
+        3   26.275   sky130_fd_sc_hd__a32oi_1
+        5    31.28   sky130_fd_sc_hd__and2_1
+        4   25.024   sky130_fd_sc_hd__and3_1
+       72 1.44E+03   sky130_fd_sc_hd__dfxtp_1
+       17   63.811   sky130_fd_sc_hd__inv_1
+       36  360.346   sky130_fd_sc_hd__maj3_1
+        1   11.261   sky130_fd_sc_hd__mux2_1
+        4   40.038   sky130_fd_sc_hd__mux2i_1
+        2   45.043   sky130_fd_sc_hd__mux4_2
+      135  506.736   sky130_fd_sc_hd__nand2_1
+       20   125.12   sky130_fd_sc_hd__nand2b_1
+        9   45.043   sky130_fd_sc_hd__nand3_1
+        1    7.507   sky130_fd_sc_hd__nand3b_1
+        5    31.28   sky130_fd_sc_hd__nand4_1
+       59  221.462   sky130_fd_sc_hd__nor2_1
+       54  337.824   sky130_fd_sc_hd__nor2b_1
+       18   90.086   sky130_fd_sc_hd__nor3_1
+        5    31.28   sky130_fd_sc_hd__nor4_1
+        3   26.275   sky130_fd_sc_hd__o2111ai_1
+        5   37.536   sky130_fd_sc_hd__o211ai_1
+       58  290.278   sky130_fd_sc_hd__o21ai_1
+        7   61.309   sky130_fd_sc_hd__o221ai_1
+        2   17.517   sky130_fd_sc_hd__o22a_1
+       10    62.56   sky130_fd_sc_hd__o22ai_1
+        1    8.758   sky130_fd_sc_hd__o31a_1
+        1    8.758   sky130_fd_sc_hd__o32ai_1
+        6   37.536   sky130_fd_sc_hd__or2_1
+        3   18.768   sky130_fd_sc_hd__or3_1
+       91  797.014   sky130_fd_sc_hd__xnor2_1
+       46  402.886   sky130_fd_sc_hd__xor2_1
+        1   23.773   sky130_fd_sc_hd__xor3_1
+
+   Chip area for module '\dsp8': 6160.908800
+     of which used for sequential elements: 1441.382400 (23.40%)
+
+
+cec: Networks are equivalent.  Time =     0.09 sec

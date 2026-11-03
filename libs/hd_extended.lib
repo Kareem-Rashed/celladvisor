@@ -85808,7 +85808,7 @@ library ("sky130_fd_sc_hd__tt_025C_1v80") {
             }
         }
     }
-  cell ("dd2_g5__maj4n_1") {
+  cell ("dd2_gb3__c000b_1") {
     area : 8.7584;
     pin ("A") { direction : "input"; capacitance : 0.0024; }
     pin ("B") { direction : "input"; capacitance : 0.0024; }
@@ -85816,7 +85816,50 @@ library ("sky130_fd_sc_hd__tt_025C_1v80") {
     pin ("D") { direction : "input"; capacitance : 0.0024; }
     pin ("Y") {
       direction : "output";
-      function : "!((C&D) | (A&B&(C|D)))";
+      function : "(!B&!C&!D) | (A&!C&!D)";
+      timing () {
+        related_pin : "A";
+        timing_sense : "positive_unate";
+        cell_rise (scalar) { values ("0.10"); }
+        cell_fall (scalar) { values ("0.08"); }
+        rise_transition (scalar) { values ("0.10"); }
+        fall_transition (scalar) { values ("0.08"); }
+      }
+      timing () {
+        related_pin : "B";
+        timing_sense : "negative_unate";
+        cell_rise (scalar) { values ("0.10"); }
+        cell_fall (scalar) { values ("0.08"); }
+        rise_transition (scalar) { values ("0.10"); }
+        fall_transition (scalar) { values ("0.08"); }
+      }
+      timing () {
+        related_pin : "C";
+        timing_sense : "negative_unate";
+        cell_rise (scalar) { values ("0.10"); }
+        cell_fall (scalar) { values ("0.08"); }
+        rise_transition (scalar) { values ("0.10"); }
+        fall_transition (scalar) { values ("0.08"); }
+      }
+      timing () {
+        related_pin : "D";
+        timing_sense : "negative_unate";
+        cell_rise (scalar) { values ("0.10"); }
+        cell_fall (scalar) { values ("0.08"); }
+        rise_transition (scalar) { values ("0.10"); }
+        fall_transition (scalar) { values ("0.08"); }
+      }
+    }
+  }
+  cell ("dd2_gb3__c001f_1") {
+    area : 7.5072;
+    pin ("A") { direction : "input"; capacitance : 0.0024; }
+    pin ("B") { direction : "input"; capacitance : 0.0024; }
+    pin ("C") { direction : "input"; capacitance : 0.0024; }
+    pin ("D") { direction : "input"; capacitance : 0.0024; }
+    pin ("Y") {
+      direction : "output";
+      function : "(!C&!D) | (!A&!B&!D)";
       timing () {
         related_pin : "A";
         timing_sense : "negative_unate";
@@ -85828,6 +85871,117 @@ library ("sky130_fd_sc_hd__tt_025C_1v80") {
       timing () {
         related_pin : "B";
         timing_sense : "negative_unate";
+        cell_rise (scalar) { values ("0.10"); }
+        cell_fall (scalar) { values ("0.08"); }
+        rise_transition (scalar) { values ("0.10"); }
+        fall_transition (scalar) { values ("0.08"); }
+      }
+      timing () {
+        related_pin : "C";
+        timing_sense : "negative_unate";
+        cell_rise (scalar) { values ("0.10"); }
+        cell_fall (scalar) { values ("0.08"); }
+        rise_transition (scalar) { values ("0.10"); }
+        fall_transition (scalar) { values ("0.08"); }
+      }
+      timing () {
+        related_pin : "D";
+        timing_sense : "negative_unate";
+        cell_rise (scalar) { values ("0.10"); }
+        cell_fall (scalar) { values ("0.08"); }
+        rise_transition (scalar) { values ("0.10"); }
+        fall_transition (scalar) { values ("0.08"); }
+      }
+    }
+  }
+  cell ("dd2_gb3__c88a8_1") {
+    area : 11.2608;
+    pin ("A") { direction : "input"; capacitance : 0.0024; }
+    pin ("B") { direction : "input"; capacitance : 0.0024; }
+    pin ("C") { direction : "input"; capacitance : 0.0024; }
+    pin ("D") { direction : "input"; capacitance : 0.0024; }
+    pin ("Y") {
+      direction : "output";
+      function : "(A&B) | (A&C&!D)";
+      timing () {
+        related_pin : "A";
+        timing_sense : "positive_unate";
+        cell_rise (scalar) { values ("0.10"); }
+        cell_fall (scalar) { values ("0.08"); }
+        rise_transition (scalar) { values ("0.10"); }
+        fall_transition (scalar) { values ("0.08"); }
+      }
+      timing () {
+        related_pin : "B";
+        timing_sense : "positive_unate";
+        cell_rise (scalar) { values ("0.10"); }
+        cell_fall (scalar) { values ("0.08"); }
+        rise_transition (scalar) { values ("0.10"); }
+        fall_transition (scalar) { values ("0.08"); }
+      }
+      timing () {
+        related_pin : "C";
+        timing_sense : "positive_unate";
+        cell_rise (scalar) { values ("0.10"); }
+        cell_fall (scalar) { values ("0.08"); }
+        rise_transition (scalar) { values ("0.10"); }
+        fall_transition (scalar) { values ("0.08"); }
+      }
+      timing () {
+        related_pin : "D";
+        timing_sense : "negative_unate";
+        cell_rise (scalar) { values ("0.10"); }
+        cell_fall (scalar) { values ("0.08"); }
+        rise_transition (scalar) { values ("0.10"); }
+        fall_transition (scalar) { values ("0.08"); }
+      }
+    }
+  }
+  cell ("dd2_gb3__c88aa_1") {
+    area : 8.7584;
+    pin ("A") { direction : "input"; capacitance : 0.0024; }
+    pin ("B") { direction : "input"; capacitance : 0.0024; }
+    pin ("D") { direction : "input"; capacitance : 0.0024; }
+    pin ("Y") {
+      direction : "output";
+      function : "(A&!D) | (A&B)";
+      timing () {
+        related_pin : "A";
+        timing_sense : "positive_unate";
+        cell_rise (scalar) { values ("0.10"); }
+        cell_fall (scalar) { values ("0.08"); }
+        rise_transition (scalar) { values ("0.10"); }
+        fall_transition (scalar) { values ("0.08"); }
+      }
+      timing () {
+        related_pin : "B";
+        timing_sense : "positive_unate";
+        cell_rise (scalar) { values ("0.10"); }
+        cell_fall (scalar) { values ("0.08"); }
+        rise_transition (scalar) { values ("0.10"); }
+        fall_transition (scalar) { values ("0.08"); }
+      }
+      timing () {
+        related_pin : "D";
+        timing_sense : "negative_unate";
+        cell_rise (scalar) { values ("0.10"); }
+        cell_fall (scalar) { values ("0.08"); }
+        rise_transition (scalar) { values ("0.10"); }
+        fall_transition (scalar) { values ("0.08"); }
+      }
+    }
+  }
+  cell ("dd2_gb3__c00af_1") {
+    area : 7.5072;
+    pin ("A") { direction : "input"; capacitance : 0.0024; }
+    pin ("C") { direction : "input"; capacitance : 0.0024; }
+    pin ("D") { direction : "input"; capacitance : 0.0024; }
+    pin ("Y") {
+      direction : "output";
+      function : "(!C&!D) | (A&!D)";
+      timing () {
+        related_pin : "A";
+        timing_sense : "positive_unate";
         cell_rise (scalar) { values ("0.10"); }
         cell_fall (scalar) { values ("0.08"); }
         rise_transition (scalar) { values ("0.10"); }

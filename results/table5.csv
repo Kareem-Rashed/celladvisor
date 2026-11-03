@@ -1,0 +1,13 @@
+design,script,baseline_um2,with_new_cells_um2,reduction_pct,new_cell_instances,equivalence
+cpu8,A,4195.2736,4197.776,-0.06,34,pass
+cpu8,B,4321.6448,4296.6208,0.58,4,pass
+dsp8,A,5794.3072,5741.7568,0.91,9,pass
+dsp8,B,6102.1024,6160.9088,-0.96,20,pass
+arlet6502,A,9320.1888,9197.5712,1.32,5,pass
+arlet6502,B,9546.656,9550.4096,-0.04,20,pass
+uart_apb,A,12817.2928,12634.6176,1.43,10,pass
+uart_apb,B,13029.9968,13038.7552,-0.07,8,pass
+risc8,A,28187.0336,27709.0752,1.7,24,pass
+risc8,B,28109.4592,28383.472,-0.97,44,pass
+fir10,A,26322.7456,25608.3104,2.71,9,pass
+fir10,B,28935.2512,28742.5664,0.67,212,pass

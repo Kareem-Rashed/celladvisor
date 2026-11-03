@@ -7,6 +7,8 @@ IN       ?=
 HD_LIB ?= pdk/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 export HD_LIB
 
+GROUP ?= b3
+
 .PHONY: setup check test all demo clean aigs table1 hd-table contained-table liberty table5 new-cells
 
 setup:            ## environment, and links to the PDK and the given files
@@ -42,7 +44,8 @@ cuts:             ## step 2: cut counts for every design, before and after ABC
 candidates:       ## steps 2, 3, 5: classes per design, frequency, Table 3 label
 	python3 src/candidates.py
 
-all: aigs table1 hd-table contained-table liberty table5   ## the flow so far, one target per step
+all: aigs table1 hd-table contained-table cuts candidates area-model rank liberty table5
+
 
 aigs:             ## step 1: AIGs of every required design, raw / strash / after ABC
 	bash scripts/aigs.sh
@@ -72,16 +75,17 @@ area-model:       ## step 6: area model fitted on HD x1 cells, with its error
 rank:             ## step 7: rank candidates by estimated saving
 	python3 src/rank.py
 
-GROUP ?=
 N     ?= 5
 
 new-cells:        ## the top N ranked candidates as new cells: make new-cells GROUP=<group number> N=5
 	@test -n "$(GROUP)" || (echo "usage: make new-cells GROUP=<group number> [N=5]" && exit 1)
 	python3 src/liberty_writer.py --from-ranked results/ranked.csv $(N) $(GROUP) libs/new_cells.csv
 
-liberty:          ## step 8: libs/hd_extended.lib and one request per cell, from libs/new_cells.csv
-	python3 src/liberty_writer.py libs/new_cells.csv given/hd_reduced.lib libs/hd_extended.lib results/requests
-	python3 src/check_liberty.py libs/hd_extended.lib $$(( 189 + $$(tail -n +2 libs/new_cells.csv | grep -c .) ))
 
-table5: liberty   ## step 9: 24 mappings with cec -> results/table5.csv, results/table5_best.csv
+liberty:          ## step 8: top ranked candidates -> extended Liberty + requests
+	python3 src/liberty_writer.py --from-ranked results/ranked.csv 5 $(GROUP) libs/new_cells.csv
+	python3 src/liberty_writer.py libs/new_cells.csv given/hd_reduced.lib libs/hd_extended.lib results/requests
+	python3 src/check_liberty.py libs/hd_extended.lib 194
+
+table5:           ## step 9: 24 mappings with cec -> Table 5
 	python3 src/table5.py

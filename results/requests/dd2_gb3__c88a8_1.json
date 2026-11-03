@@ -1,0 +1,15 @@
+{
+  "request_id": "R-003",
+  "name": "dd2_gb3__c88a8_1",
+  "inputs": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "output": "Y",
+  "expression": "(A&B) | (A&C&!D)",
+  "truth_table": "0x88A8",
+  "sizing": "hd",
+  "estimated_area_um2": 11.2608
+}

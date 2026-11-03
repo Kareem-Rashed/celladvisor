@@ -1,6 +1,6 @@
 {
   "request_id": "R-001",
-  "name": "dd2_g5__maj4n_1",
+  "name": "dd2_gb3__c000b_1",
   "inputs": [
     "A",
     "B",
@@ -8,8 +8,8 @@
     "D"
   ],
   "output": "Y",
-  "expression": "!((C&D) | (A&B&(C|D)))",
-  "truth_table": "0x077F",
+  "expression": "(!B&!C&!D) | (A&!C&!D)",
+  "truth_table": "0x000B",
   "sizing": "hd",
   "estimated_area_um2": 8.7584
 }
