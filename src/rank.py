@@ -2,6 +2,8 @@ import csv
 import os
 import subprocess
 
+from areamodel import estimate_area
+
 LIB = "given/hd_reduced.lib"
 MAP = "given/scripts/map.sh"
 STAND_IN = 7 * 0.46 * 2.72
@@ -46,17 +48,7 @@ def top_candidates(n=30):
 
 
 def new_cell_area(tt):
-    # ======================================================================
-    # PLACEHOLDER: area of a new cell for this truth table.
-    #
-    # When Mahinour's src/cost.py exists, this becomes:
-    #     transistors, single = cost(tt)
-    #     slope, intercept = fit(cells, single)      (areamodel.py)
-    #     return predict(transistors, slope, intercept), "model"
-    #
-    # Until then it returns the handout's example cell, 7 sites, and says so.
-    # ======================================================================
-    return STAND_IN, "stand-in"
+    return estimate_area(tt), "model"
 
 
 def saving(row):
@@ -64,6 +56,10 @@ def saving(row):
     count = int(row["total"])
     now = hd_area(tt)
     new, source = new_cell_area(tt)
+
+    if now is None or new is None: #fallback in case area was not found
+        return None
+    
     each = now - new
     return now, new, source, each, count * each
 
@@ -71,7 +67,11 @@ def saving(row):
 def main():
     ranked = []
     for row in top_candidates():
-        now, new, source, each, total = saving(row)
+        result = saving(row)
+        if result is None:
+            print("skipped", row["class"], "(no area)")
+            continue
+        now, new, source, each, total = result
         ranked.append([row["class"], row["total"], round(now, 4), round(new, 4),
                        source, round(each, 4), round(total, 1)])
         print(row["class"], row["total"], "HD now", round(now, 2),

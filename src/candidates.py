@@ -10,6 +10,7 @@ from cutter import enumerate_cuts
 from cuts import cut_truth_table
 from canon import canon_p, canon_pn, used_inputs
 from redundancy import Redundancy
+from areamodel import estimate_area
 
 DESIGNS = ["cpu8", "dsp8", "arlet6502", "uart_apb", "risc8", "fir10"]
 GRAPHS = ["strash", "abc"]
@@ -56,17 +57,7 @@ def hd_cost(label, area, inv_area):
 
 
 def estimated_area(cls):
-    # ======================================================================
-    # PLACEHOLDER FOR MAHINOUR (cost, step 4) AND THE AREA MODEL (step 6)
-    #
-    # Return the estimated area in um2 of a new cell for this P-class
-    # (cls is its 16-bit truth table), from the transistor count of the
-    # cost step and the area model fitted to HD's x1 cells.
-    #
-    # Until that exists this returns None, and decide() below marks every
-    # "Exists with inverter" and "Contained" class as "pending".
-    # ======================================================================
-    return None
+    return estimate_area(cls)
 
 
 def decide(label, cost, new_area):
