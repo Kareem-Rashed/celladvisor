@@ -1,0 +1,9 @@
+{
+  "why": "Broken case for the cec check: in the mapped netlist of cpu8 (baseline library, script A), the first nand2_1 is replaced by nor2_1, which has the same pins but another function. cec must report the netlist not equivalent to the reference.",
+  "design": "cpu8",
+  "top": "cpu8",
+  "library": "given/hd_reduced.lib",
+  "script": "A",
+  "replace": "sky130_fd_sc_hd__nand2_1 ",
+  "with": "sky130_fd_sc_hd__nor2_1 "
+}

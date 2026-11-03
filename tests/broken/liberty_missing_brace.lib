@@ -1,0 +1,46 @@
+/* Broken case for src/check_liberty.py: the closing brace of the cell group is
+   missing, so the file is not valid Liberty. Yosys must reject it. */
+library (dd2_broken_case) {
+  cell ("dd2_g5__maj4n_1") {
+    area : 8.7584;
+    pin ("A") { direction : "input"; capacitance : 0.0024; }
+    pin ("B") { direction : "input"; capacitance : 0.0024; }
+    pin ("C") { direction : "input"; capacitance : 0.0024; }
+    pin ("D") { direction : "input"; capacitance : 0.0024; }
+    pin ("Y") {
+      direction : "output";
+      function : "!((C&D) | (A&B&(C|D)))";
+      timing () {
+        related_pin : "A";
+        timing_sense : "negative_unate";
+        cell_rise (scalar) { values ("0.10"); }
+        cell_fall (scalar) { values ("0.08"); }
+        rise_transition (scalar) { values ("0.10"); }
+        fall_transition (scalar) { values ("0.08"); }
+      }
+      timing () {
+        related_pin : "B";
+        timing_sense : "negative_unate";
+        cell_rise (scalar) { values ("0.10"); }
+        cell_fall (scalar) { values ("0.08"); }
+        rise_transition (scalar) { values ("0.10"); }
+        fall_transition (scalar) { values ("0.08"); }
+      }
+      timing () {
+        related_pin : "C";
+        timing_sense : "negative_unate";
+        cell_rise (scalar) { values ("0.10"); }
+        cell_fall (scalar) { values ("0.08"); }
+        rise_transition (scalar) { values ("0.10"); }
+        fall_transition (scalar) { values ("0.08"); }
+      }
+      timing () {
+        related_pin : "D";
+        timing_sense : "negative_unate";
+        cell_rise (scalar) { values ("0.10"); }
+        cell_fall (scalar) { values ("0.08"); }
+        rise_transition (scalar) { values ("0.10"); }
+        fall_transition (scalar) { values ("0.08"); }
+      }
+    }
+}
