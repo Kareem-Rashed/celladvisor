@@ -2,13 +2,23 @@
 from contained import load_hd_cells
 from statistics import linear_regression
 import csv
-import sys
+import sys, os
 
 
 
 SITE_AREA = 0.46 * 2.72
 
 SKIP = ("lpflow_", "dly", "probe")
+
+HD_LIB = os.environ.get(
+    "HD_LIB",
+    "pdk/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib")
+
+SPICE = os.environ.get(
+    "SPICE",
+    "pdk/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice")
+
+_LINES = None
 
 
 def x1_cells(lib_path, spice_path):
@@ -97,10 +107,28 @@ def error_table(cells, path):
           "sites, worst", max(single_errors), "sites")
     print("multi-stage:  mean error", round(sum(multi_errors) / len(multi_errors), 2),
           "sites, worst", max(multi_errors), "sites")
+
+
+def estimate_area(tt):
+    from cost import cost 
+
+    global _LINES
+
+    if _LINES is None:
+        cells = x1_cells(HD_LIB, SPICE)
+        _LINES = {True: fit(cells, True), False: fit(cells, False)}
+
+    transistors, single = cost(tt)
+    if transistors == 0:
+        return None
+    
+    slope, intercept = _LINES[single]
+    return max(predict(transistors, slope, intercept), SITE_AREA)
     
 
 if __name__ == "__main__":
     lib = sys.argv[1]
     spice = sys.argv[2]
+    
     cells = x1_cells(lib, spice)
     error_table(cells, "results/area_model.csv")
