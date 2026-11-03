@@ -4,7 +4,7 @@ Read this before writing code that calls another member's module. It lists
 what each module in `src/` exposes, who owns it, and what is not written yet.
 Update it in the same commit whenever you add or change a public function.
 
-Last updated: 2026-10-27 (Joshua).
+Last updated: 2026-11-03 (Joshua).
 
 ## Shared conventions
 
@@ -34,6 +34,8 @@ Last updated: 2026-10-27 (Joshua).
 | 5. Redundancy: Exists, Exists with an inverter | `src/redundancy.py` | Mahinour | **Implemented and verified** by `tests/test_redundancy_check.py` |
 | 5. Redundancy: Contained | `src/contained.py` | Joshua | Done, tested |
 | 5. Table 4 self-test | in `tests/` | Mahinour | Implemented and passing (`tests/test_table4.py`) |
+| 8. Liberty file and cell requests | `src/liberty_writer.py`, `src/check_liberty.py` | Joshua | Done, tested; `make liberty` |
+| 9. Mapping, Table 5, cec | `src/table5.py` | Joshua | Done, tested; `make table5` |
 
 ## `src/canon.py` (Kareem)
 
@@ -108,3 +110,40 @@ input k (A, B, C, D). Simulates the cut on all 16 rows and returns whether
 `tt` is right. Checked by `tests/test_cut_check.py` with
 `tests/broken/small_aig.aag` (`y = (a & b) | c`): root 5 with leaves
 `[1, 2, 3]` must accept `0x0707` and reject the one-bit-wrong `0x0706`.
+
+## `src/liberty_writer.py` (Joshua)
+
+New cells are listed in `libs/new_cells.csv` with the columns
+`name,expression,area_um2` (name starts with `dd2_g<group>__`; expression uses
+the input names with `! & | ^` and parentheses; the output pin is always `Y`).
+
+- `cell_group(name, expression, area) -> str`: one Liberty cell group in the
+  form of handout section 6: area, input pins with a placeholder capacitance,
+  the output function, one timing arc per input with its timing sense and
+  placeholder delays. Inputs are `hdlib.support(expression)` (sorted).
+- `write_library(base_lib, cells, out_lib)`: copies `base_lib` with the new
+  groups added before its final `}`; refuses a name already in the library.
+- `request(name, expression, area, request_id) -> dict`: an Appendix A request;
+  `truth_table` is hex with the first input as bit 0 (0x077F for the handout's
+  example).
+- `sop(tt) -> str`: a small sum-of-products expression over A..D for a 16-bit
+  truth table; `cells_from_ranked(ranked_csv, n, group)` uses it to turn the top
+  rows of `results/ranked.csv` into cells (`make new-cells GROUP=<n> N=5`).
+
+## `src/check_liberty.py` (Joshua)
+
+- `check_liberty(path, expected=None) -> (ok, message)`: `read_liberty -lib`
+  must print "Imported N cell types" with N = expected, and the full
+  `read_liberty` must parse every function. `-lib` alone accepts a function
+  that names a pin the cell does not have.
+
+## `src/table5.py` (Joshua)
+
+- `map_design(verilog, top, lib, script, out_v, stat_txt) -> area`: the
+  handout's mapping commands; the netlist is written after `stat`. Writing it
+  before `abc` changes ABC's result.
+- `reference(verilog, top, lib, ref_v)`: the same commands up to `dfflibmap`.
+- `cec(ref_v, impl_v, top, lib, work) -> (passed, abc_line)`: both netlists
+  read with the Liberty models, flattened, written as BLIF, compared with
+  `yosys-abc -c "cec -n ..."`.
+- `main()`: the 24 runs, `results/table5.csv`, `results/table5_best.csv`.
