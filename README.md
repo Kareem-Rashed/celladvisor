@@ -152,18 +152,18 @@ The flip-flop counts match the handout's Table 2 for the six required designs; o
 
 ### 6.3 Cuts and classes (`results/cut_counts.csv`, `results/class_counts.csv`, ABC graph)
 
-| design | AND nodes | cuts (all) | cuts of 2 to 4 leaves | P classes | PN classes |
-|---|---|---|---|---|---|
-| cpu8 | 855 | 6,032 | 5,177 | 202 | 169 |
-| dsp8 | 1,303 | 10,758 | 9,455 | 221 | 180 |
-| arlet6502 | 2,102 | 16,710 | 14,608 | 261 | 185 |
-| uart_apb | 1,746 | 10,372 | 8,626 | 140 | 107 |
-| risc8 | 4,865 | 36,109 | 31,244 | 232 | 168 |
-| fir10 | 6,385 | 66,698 | 60,313 | 240 | 200 |
-| spm | 368 | 1,933 | 1,565 | 35 | 35 |
-| mul | 510 | 5,782 | 5,272 | 185 | 146 |
+| design | AND nodes | cuts (all) | cuts of 2 to 4 leaves | P classes | PN classes | NPN classes |
+|---|---|---|---|---|---|---|
+| cpu8 | 855 | 6,032 | 5,177 | 202 | 169 | 53 |
+| dsp8 | 1,303 | 10,758 | 9,455 | 221 | 180 | 49 |
+| arlet6502 | 2,102 | 16,710 | 14,608 | 261 | 185 | 47 |
+| uart_apb | 1,746 | 10,372 | 8,626 | 140 | 107 | 30 |
+| risc8 | 4,865 | 36,109 | 31,244 | 232 | 168 | 42 |
+| fir10 | 6,385 | 66,698 | 60,313 | 240 | 200 | 55 |
+| spm | 368 | 1,933 | 1,565 | 35 | 35 | 14 |
+| mul | 510 | 5,782 | 5,272 | 185 | 146 | 34 |
 
-"Cuts (all)" includes the trivial one-leaf cut of every AND node. P classes are equal up to input order, the class that matters for CMOS (an inverter costs two transistors); PN also identifies a function with its complement. The strash graph's counts are in the same files. The NPN count (input inversions free) is not computed (section 9).
+"Cuts (all)" includes the trivial one-leaf cut of every AND node. **P classes** are equal up to input order, the class that matters for CMOS: an input inverter costs two transistors, so two functions that differ by an inverted input are two different cells. PN also identifies a function with its complement. **NPN classes** also treat input inversions as free, which counts 2.5 to 5.6 times fewer classes (for `fir10`, 240 P classes against 55 NPN classes) and so overstates how much cells could be shared. The strash graph's counts are in the same file. `canon_npn` finds exactly 222 NPN classes over all 4-input functions (`tests/test_canon.py`).
 
 ### 6.4 Redundancy against HD (`results/candidates.csv`, `results/hd_classes.csv`)
 
@@ -313,7 +313,7 @@ The new cells' timing in our Liberty is a placeholder (0.10 and 0.08 ns), so a p
 | Test file | What it checks | Broken case |
 | --- | --- | --- |
 | `tests/test_aig_reader.py` | the AIGER reader | |
-| `tests/test_canon.py` | input permutation, class IDs, used inputs; exactly 3,904 classes of 4-input functions that use all 4 inputs | |
+| `tests/test_canon.py` | input permutation, class IDs, used inputs; exactly 3,904 classes of 4-input functions that use all 4 inputs; NPN merges nand, nor, and, or; exactly 222 NPN classes of 4-input functions | |
 | `tests/test_cuts.py` | cut enumeration: dominated cuts removed, size limit, the hand-traced cuts and truth tables of a tiny AIG | |
 | `tests/test_cut_check.py` | the cut check accepts a correct truth table and rejects a wrong one | `tests/broken/wrong_cut_tt.json` on `tests/broken/small_aig.aag`: one bit flipped |
 | `tests/test_hdlib.py` | the Liberty expression parser and the HD class table | |
@@ -340,7 +340,6 @@ AGENTS.md · ai/use_log.md · ai/mistakes_log.md · report/ai_report.pdf
 - **Estimated against real areas.** The area model describes HD's hand-optimized layouts. The generator's cells are 2.1 to 3.6 times the model's estimate (11 times for `c2abf`) and 1.6 to 2.6 times what HD pays for the same function (8 times for `c2abf`). The model's error on HD's own cells is under one site.
 - **The generator.** 14 of the first 30 ranked candidates could not be laid out (routing capacity exceeded). 4 of the 10 final cells fail its logic simulation check; the real-cells library nevertheless contains all ten, and none is used. We did not run its full characterization, so the new cells have placeholder timing and capacitance (handout section 6).
 - **Cost.** The limit of 3 transistors in series is not enforced in the cost estimate, so `nand4` counts as one stage; Table 4's rows below the four redundancy counts (one-stage classes) are not tested. Multi-stage costs are a rough estimate; XOR-like functions get a fixed 40 transistors.
-- **Classes.** P and PN classes are counted; the NPN count (input inversions free) is not.
 - **Ranking** maps each function alone and multiplies by its frequency. Cuts overlap, so not every occurrence can be replaced at once. The pool is every kept class of the ABC graph; classes that occur rarely are in it, but a larger design set could change the ranking.
 - **cec** compares each mapped netlist with the design after Yosys synthesis and flip-flop mapping (before ABC), not with the Verilog source; flip-flops are matched by order. Tutorial 4's gate-level testbenches are not run.
 - **Delays.** Ideal wires (no parasitics), typical corner, placeholder timing for the new cells.
