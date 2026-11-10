@@ -111,16 +111,18 @@ def write_curve_csv(path, rows, designs):
               "change_vs_baseline_um2", "saving_vs_baseline_pct"]
     
     header += [f"{d}_best_um2" for d in designs]
-    
+    header += ["total_script_A_um2", "total_script_B_um2"]
+
     with open(path, "w", newline="") as f:
         writer = csv.writer(f, lineterminator="\n")
         writer.writerow(header)
         writer.writerows(rows)
 
 
-def plot_curve(path, labels, totals, title):
+def plot_curve(path, labels, totals, title, totals_b=None):
     """
-    Total best-of-both area after each added cell
+    Total best-of-both area after each added cell, and (dashed) the script B
+    total, the number the greedy selection optimizes
     """
     try:
         import matplotlib
@@ -136,7 +138,10 @@ def plot_curve(path, labels, totals, title):
     fig, ax = plt.subplots(figsize=(7, 4.2))
     ax.axhline(baseline, color="grey", linestyle="--", linewidth=1,
                label="baseline (no new cells)")
-    ax.plot(steps, totals, marker="o", linewidth=2, label="with new cells")
+    ax.plot(steps, totals, marker="o", linewidth=2, label="best of A and B (with new cells)")
+    if totals_b is not None:
+        ax.plot(steps, totals_b, marker="s", linewidth=1.5, linestyle="--",
+                color="tab:orange", label="script B only (what greedy optimizes)")
 
     # Write the change next to every point: this shows which cell did the work.
     for i in range(1, len(totals)):
@@ -146,7 +151,7 @@ def plot_curve(path, labels, totals, title):
 
     ax.set_xticks(steps)
     ax.set_xticklabels(labels, rotation=20, ha="right", fontsize=8)
-    ax.set_ylabel("total area of the 6 designs (um$^2$)")
+    ax.set_ylabel("total area of the 8 designs (um$^2$)")
     ax.set_title(title)
     ax.legend()
     ax.grid(alpha=0.3)
@@ -171,7 +176,7 @@ def build_curve(mode):
 
     designs = [d for d, _ in DESIGNS]
 
-    rows, labels, totals = [], [], []
+    rows, labels, totals, totals_b = [], [], [], []
     for k, (total, per_design, cell_uses) in enumerate(results):
         name = "(baseline)" if k == 0 else chosen[k - 1][0]
 
@@ -181,17 +186,20 @@ def build_curve(mode):
         rows.append([k, name, round(total, 4), round(total - previous, 4),
                      round(total - baseline, 4),
                      round((baseline - total) / baseline * 100, 3)]
-                    + [round(best, 4) for _, _, _, best in per_design])
-        
+                    + [round(best, 4) for _, _, _, best in per_design]
+                    + [round(sum(a for _, a, _, _ in per_design), 4),
+                       round(sum(b for _, _, b, _ in per_design), 4)])
+
         labels.append("baseline" if k == 0 else name.replace("dd2_gb3__", ""))
         totals.append(total)
+        totals_b.append(sum(b for _, _, b, _ in per_design))
         print(f"step {k}  {name:20} total {total:11.4f}  "
               f"change {total - previous:+9.4f}  uses {cell_uses}")
 
     os.makedirs("results", exist_ok=True)
     write_curve_csv(f"results/curve_{mode}.csv", rows, designs)
     plot_curve(f"results/curve_{mode}.png", labels, totals,
-               f"Cell-by-cell curve ({mode} areas, best of scripts A and B)")
+               f"Cell-by-cell curve ({mode} areas)", totals_b)
 
 
 if __name__ == "__main__":

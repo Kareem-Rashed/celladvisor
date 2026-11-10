@@ -40,7 +40,14 @@ def read_report(out_dir):
         "backend": report.get("layout_backend", ""),
     }
 
-cells = cells_from_ranked("results/ranked.csv", None, "b3")
+if len(sys.argv) > 1:
+    # python3 scripts/real_areas.py libs/final_estimated.csv
+    # only the cells of this CSV (columns name, expression, area_um2), e.g. the final set
+    with open(sys.argv[1]) as f:
+        cells = [(r["name"], r["expression"], float(r["area_um2"]))
+                 for r in csv.DictReader(f)]
+else:
+    cells = cells_from_ranked("results/ranked.csv", None, "b3")
 
 rows = []
 for name, expression, estimated in cells:
