@@ -8,7 +8,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from aig_reader import read_aag
 from cutter import enumerate_cuts
 from cuts import cut_truth_table
-from canon import canon_p, canon_pn, used_inputs
+from canon import canon_p, canon_pn, canon_npn, used_inputs
 from redundancy import Redundancy
 from areamodel import estimate_area
 
@@ -105,18 +105,22 @@ def main():
             path = f"build/aig/{design}_{graph}.aag"
             ands, counts = classes_in(path)
             n_cuts = sum(counts.values())
+
             p_classes = len(counts)
             pn_classes = len({canon_pn(c) for c in counts})
-            summary.append([design, graph, ands, n_cuts, p_classes, pn_classes])
+            npn_classes = len({canon_npn(c) for c in counts})
+            
+            summary.append([design, graph, ands, n_cuts, p_classes, pn_classes, npn_classes])
+
             print(f"{design:10} {graph:6} cuts {n_cuts:6}  "
-                  f"P classes {p_classes:4}  PN classes {pn_classes:4}")
+                  f"P classes {p_classes:4}  PN classes {pn_classes:4}  NPN classes {npn_classes:4}")
             for cls, n in counts.items():
                 per_class.setdefault((graph, cls), Counter())[design] = n
 
     with open("results/class_counts.csv", "w", newline="") as f:
         w = csv.writer(f)
         w.writerow(["design", "graph", "ands", "cuts_2_to_4",
-                    "p_classes", "pn_classes"])
+                    "p_classes", "pn_classes", "npn_classes"])
         w.writerows(summary)
 
     rows = []

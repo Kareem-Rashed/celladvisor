@@ -36,6 +36,19 @@ def permute(tt, p):
     return new_tt
 
 
+def negate_inputs(tt, mask):
+    """
+    negate inputs for the NPN function by xor'ing with a mask
+    set bits in mask = invert
+    """
+    new_tt = 0
+
+    for row in range(16):
+        if get_bit(tt, row ^ mask):
+            new_tt = set_bit(new_tt, row)
+
+    return new_tt
+
 def canon_p(tt):
     return min(permute(tt, p) for p in PERMS)
 
@@ -44,6 +57,9 @@ def canon_pn(tt):
     flipped = 0xFFFF - tt
     return min(canon_p(tt), canon_p(flipped))
 
+
+def canon_npn(tt):
+    return min(canon_pn(negate_inputs(tt, mask)) for mask in range(16))
 
 def used_inputs(tt):
     used = set()
@@ -55,3 +71,7 @@ def used_inputs(tt):
             if get_bit(tt, row) != get_bit(tt, other_row):
                 used.add(pin)
     return used
+
+
+
+
