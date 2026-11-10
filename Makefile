@@ -9,7 +9,7 @@ export HD_LIB
 
 GROUP ?= b3
 
-.PHONY: setup check test all demo clean aigs table1 hd-table contained-table liberty table5 new-cells cw-setup real-areas greedy docker-images check-cells real-cells real-cells-soft curve sensitivity
+.PHONY: setup check test all demo clean aigs table1 hd-table contained-table liberty table5 new-cells cw-setup real-areas greedy docker-images check-cells real-cells real-cells-soft curve sensitivity table5-final table5-real
 
 setup:            ## environment, and links to the PDK and the given files
 	ln -sfn $(PDK_ROOT)/sky130A pdk
@@ -89,8 +89,19 @@ liberty:          ## step 8: top ranked candidates -> extended Liberty + request
 	python3 src/liberty_writer.py libs/new_cells.csv given/hd_reduced.lib libs/hd_extended.lib results/requests
 	python3 src/check_liberty.py libs/hd_extended.lib 194
 
-table5:           ## step 9: 24 mappings with cec -> Table 5
+table5:           ## step 9: 32 mappings with cec -> Table 5
 	python3 src/table5.py
+
+table5-final:     ## Table 5 for the final greedy cells, estimated areas -> results/final_estimated
+	python3 src/liberty_writer.py libs/final_estimated.csv given/hd_reduced.lib libs/hd_final_estimated.lib results/requests_final
+	python3 src/check_liberty.py libs/hd_final_estimated.lib 199
+	python3 src/table5.py libs/hd_final_estimated.lib results/final_estimated
+
+table5-real:      ## Table 5 for the final greedy cells, real areas -> results/final_real
+	python3 scripts/final_real_areas.py libs/final_estimated.csv results/real_areas.csv libs/final_real.csv
+	python3 src/liberty_writer.py libs/final_real.csv given/hd_reduced.lib libs/hd_final_real.lib build/requests_real
+	python3 src/check_liberty.py libs/hd_final_real.lib 199
+	python3 src/table5.py libs/hd_final_real.lib results/final_real
 
 greedy:           ## step 10: greedy selection on script B, on estimated and on real areas (about 15 minutes)
 	python3 -u src/greedy.py estimated > results/greedy_estimated.txt

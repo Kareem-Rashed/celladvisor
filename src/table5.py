@@ -1,7 +1,8 @@
 """Step 9 of the Option 2 handout: map every design with and without the new
 cells, and check every mapping with ABC's cec (handout, sections 2 and 7).
 
-24 runs: 6 designs x {baseline, extended} x {script A, script B}. Each mapping
+One run per design x {baseline, extended} x {script A, script B}: 32 runs for
+the 8 designs of DESIGNS. Each mapping
 uses exactly the commands of handout section 2 (given/scripts/map.sh); the
 mapped netlist is written only after stat:
 
@@ -22,6 +23,12 @@ checked against its declared function), flattened, and written as BLIF; ABC's
 cec then proves the combinational logic between flip-flops equal. Flip-flops
 keep their instance names (write_verilog -norename), so they appear in the
 same order in both files and are matched by order (cec -n).
+
+Usage:
+  python3 src/table5.py                      checkpoint 2: libs/hd_extended.lib -> results/
+  python3 src/table5.py <lib> <out folder>   any extended library, e.g. the final cells:
+      python3 src/table5.py libs/hd_final_estimated.lib results/final_estimated
+  With a folder, the files below are written inside it (netlists in <out folder>/mapped/).
 
 Writes:
   results/mapped/<design>_<baseline|extended>_<A|B>.v
@@ -110,38 +117,52 @@ def design_file(design):
     return path if os.path.exists(path) else f"designs/{design}.v"
 
 
-def one_run(design, top, lib_name, script):
+def one_run(design, top, lib_name, script, libs, mapped):
+    """One mapping with cec. libs maps "baseline"/"extended" to a Liberty file;
+    mapped is the folder for the netlists and their logs."""
     name = f"{design}_{lib_name}_{script}"
-    lib = LIBS[lib_name]
+    lib = libs[lib_name]
     ref_v = f"{BUILD}/{name}_ref.v"
-    out_v = f"{MAPPED}/{name}.v"
+    out_v = f"{mapped}/{name}.v"
     stat = f"{BUILD}/{name}_stat.txt"
     verilog = design_file(design)
     area = map_design(verilog, top, lib, script, out_v, stat)
     reference(verilog, top, lib, ref_v)
     used = new_cell_instances(out_v)
     passed, cec_line = cec(ref_v, out_v, top, lib, f"{BUILD}/{name}")
-    with open(f"{MAPPED}/logs/{name}.log", "w", newline="\n") as f:
+    with open(f"{mapped}/logs/{name}.log", "w", newline="\n") as f:
         f.write(open(stat).read())
         f.write(f"\ncec: {cec_line}\n")
     print(f"{name:26} area {area:10.2f}  new cells {used:5}  cec {'pass' if passed else 'FAIL'}")
     return area, used, passed
 
 
-def main():
-    for lib in LIBS.values():
+def main(extended_lib=None, out_dir="results"):
+    """Table 5 for one extended library. With no arguments: the checkpoint 2
+    library (libs/hd_extended.lib) and results/, as before."""
+    if extended_lib is None:
+        extended_lib = LIBS["extended"]
+    libs = {"baseline": LIBS["baseline"], "extended": extended_lib}
+
+    # Netlists go to results/mapped for the default run, else <out_dir>/mapped.
+    if out_dir == "results":
+        mapped = MAPPED
+    else:
+        mapped = out_dir + "/mapped"
+
+    for lib in libs.values():
         if not os.path.exists(lib):
             sys.exit(f"missing {lib}: run make setup / make liberty first")
     os.makedirs(BUILD, exist_ok=True)
-    os.makedirs(f"{MAPPED}/logs", exist_ok=True)
+    os.makedirs(f"{mapped}/logs", exist_ok=True)
 
     rows, best = [], []
     all_pass = True
     for design, top in DESIGNS:
         areas = {}
         for script in SCRIPTS:
-            base, _, base_ok = one_run(design, top, "baseline", script)
-            ext, used, ext_ok = one_run(design, top, "extended", script)
+            base, _, base_ok = one_run(design, top, "baseline", script, libs, mapped)
+            ext, used, ext_ok = one_run(design, top, "extended", script, libs, mapped)
             ok = base_ok and ext_ok
             all_pass &= ok
             areas[script] = (base, ext)
@@ -156,12 +177,12 @@ def main():
     te = sum(r[2] for r in best)
     best.append(["total", round(tb, 4), round(te, 4), round((tb - te) / tb * 100, 2)])
 
-    with open("results/table5.csv", "w", newline="") as f:
+    with open(f"{out_dir}/table5.csv", "w", newline="") as f:
         w = csv.writer(f, lineterminator="\n")
         w.writerow(["design", "script", "baseline_um2", "with_new_cells_um2",
                     "reduction_pct", "new_cell_instances", "equivalence"])
         w.writerows(rows)
-    with open("results/table5_best.csv", "w", newline="") as f:
+    with open(f"{out_dir}/table5_best.csv", "w", newline="") as f:
         w = csv.writer(f, lineterminator="\n")
         w.writerow(["design", "baseline_best_um2", "with_new_cells_best_um2",
                     "reduction_pct"])
@@ -173,4 +194,7 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    if len(sys.argv) == 3:
+        main(sys.argv[1], sys.argv[2])
+    else:
+        main()
