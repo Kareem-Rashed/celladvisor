@@ -1,4 +1,11 @@
 name,expression,area_um2
+dd2_gb3__c033f_1,(!C&!D) | (!B&!D) | (!B&!C),8.7584
 dd2_gb3__c000b_1,(!B&!C&!D) | (A&!C&!D),8.7584
+dd2_gb3__c2abf_1,(!C&!D) | (A&!B) | (!B&!D) | (A&!D) | (A&!C),12.512
+dd2_gb3__c0aff_1,!D | (A&!C),7.5072
+dd2_gb3__c0aaf_1,(!C&!D) | (A&!D) | (A&!C),11.2608
+dd2_gb3__caaee_1,A | (B&!D),8.7584
+dd2_gb3__c037f_1,(!C&!D) | (!B&!D) | (!B&!C) | (!A&!D),10.0096
+dd2_gb3__c03ab_1,(!B&!C) | (A&!D),8.7584
 dd2_gb3__c002a_1,(A&!C&!D) | (A&!B&!D),8.7584
-dd2_gb3__c00bf_1,(!C&!D) | (!B&!D) | (A&!D),8.7584
+dd2_gb3__c02ff_1,!D | (A&!B&!C),8.7584
