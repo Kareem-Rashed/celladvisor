@@ -1,0 +1,4 @@
+name,expression,area_um2
+dd2_gb3__c000b_1,(!B&!C&!D) | (A&!C&!D),8.7584
+dd2_gb3__c002a_1,(A&!C&!D) | (A&!B&!D),8.7584
+dd2_gb3__c00bf_1,(!C&!D) | (!B&!D) | (A&!D),8.7584

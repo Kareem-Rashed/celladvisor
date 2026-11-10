@@ -1,0 +1,4 @@
+cell,geometry,drc,lvs,abutment,simulation,overall,exit_code
+dd2_gb3__c000b_1,pass,pass,pass,pass,fail,fail,1
+dd2_gb3__c002a_1,pass,pass,pass,pass,fail,fail,1
+dd2_gb3__c00bf_1,pass,pass,pass,pass,pass,pass,0

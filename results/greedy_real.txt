@@ -1,0 +1,18 @@
+baseline (script B) 90045.1104
+1 dd2_gb3__c000b_1 0.0 unused: 1
+1 dd2_gb3__c001f_1 265.2544 unused: 1
+1 dd2_gb3__c88a8_1 192.6848 unused: 1
+1 dd2_gb3__c88aa_1 -1.2512 unused: 1
+1 dd2_gb3__c00af_1 -5.0048 unused: 1
+1 dd2_gb3__c008a_1 -10.0096 unused: 1
+1 dd2_gb3__ca888_1 152.6464 unused: 1
+1 dd2_gb3__c002a_1 0.0 unused: 1
+1 dd2_gb3__c00bf_1 0.0 unused: 1
+1 dd2_gb3__c8088_1 0.0 unused: 1
+1 dd2_gb3__c00a8_1 -20.0192 unused: 1
+1 dd2_gb3__c00fe_1 0.0 unused: 1
+1 dd2_gb3__c00ef_1 7.5072 unused: 1
+1 dd2_gb3__c00ea_1 193.936 unused: 1
+1 dd2_gb3__c000e_1 0.0 unused: 1
+1 dd2_gb3__c003c_1 -158.9024 unused: 1
+no candidate passes: stop

@@ -9,7 +9,7 @@ export HD_LIB
 
 GROUP ?= b3
 
-.PHONY: setup check test all demo clean aigs table1 hd-table contained-table liberty table5 new-cells
+.PHONY: setup check test all demo clean aigs table1 hd-table contained-table liberty table5 new-cells cw-setup real-areas greedy docker-images check-cells real-cells real-cells-soft
 
 setup:            ## environment, and links to the PDK and the given files
 	ln -sfn $(PDK_ROOT)/sky130A pdk
@@ -37,6 +37,7 @@ test:             ## every test, including the broken cases in tests/broken/
 	python3 tests/test_cost.py
 	python3 tests/test_liberty_writer.py
 	python3 tests/test_cec.py
+	python3 tests/test_areamodel.py
 
 cuts:             ## step 2: cut counts for every design, before and after ABC
 	python3 src/run_cuts.py
@@ -44,7 +45,7 @@ cuts:             ## step 2: cut counts for every design, before and after ABC
 candidates:       ## steps 2, 3, 5: classes per design, frequency, Table 3 label
 	python3 src/candidates.py
 
-all: aigs table1 hd-table contained-table cuts candidates area-model rank liberty table5
+all: aigs table1 hd-table contained-table cuts candidates area-model rank liberty table5 greedy real-cells-soft
 
 
 aigs:             ## step 1: AIGs of every required design, raw / strash / after ABC
@@ -89,3 +90,32 @@ liberty:          ## step 8: top ranked candidates -> extended Liberty + request
 
 table5:           ## step 9: 24 mappings with cec -> Table 5
 	python3 src/table5.py
+
+greedy:           ## step 10: greedy selection on script B, on estimated and on real areas (about 15 minutes)
+	python3 -u src/greedy.py estimated > results/greedy_estimated.txt
+	python3 -u src/greedy.py real > results/greedy_real.txt
+
+cw-setup:         ## step 11, once: check out the cell generator and make its Python 3.12 environment (needs network)
+	git submodule update --init cellweaver
+	python3.12 -m venv build/cwvenv
+	build/cwvenv/bin/pip install -r cellweaver/requirements.lock
+
+real-areas:       ## step 11: real area of every ranked candidate from the generator -> results/real_areas.csv (needs make cw-setup)
+	python3 scripts/real_areas.py
+
+docker-images:    ## step 11: the course image and the generator image (needs Docker and network; about 10 minutes the first time)
+	docker build -t dd2-layout-tools $(GIVEN)/../container
+	docker build -t dd2-cellweaver -f docker/cellweaver.Dockerfile cellweaver
+
+check-cells:      ## step 11: the generator's own checks (DRC, LVS, simulation) on the final set -> results/real_cell_checks.csv
+	python3 scripts/check_cells.py libs/final_estimated.csv results/real_cell_checks.csv
+
+real-cells:       ## step 11 in full, from nothing: generator, real areas, images, checks
+	$(MAKE) cw-setup real-areas docker-images check-cells
+
+real-cells-soft:  ## part of make all: runs the checks if Docker and the generator are there, otherwise says it skipped them
+	@if docker info >/dev/null 2>&1 && [ -d cellweaver/scl_gen ]; then \
+		$(MAKE) docker-images check-cells; \
+	else \
+		echo "SKIPPED check-cells: needs Docker and the cellweaver submodule (make cw-setup). Verdicts of the tagged run: results/real_cell_checks.csv"; \
+	fi

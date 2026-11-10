@@ -1,0 +1,5 @@
+step,cell_added,instances,total_script_B_um2,change_vs_baseline_um2
+0,(baseline),0,90045.1104,0.0
+1,dd2_gb3__c000b_1,188,89832.4064,-212.704
+2,dd2_gb3__c002a_1,7,89823.648,-221.4624
+3,dd2_gb3__c00bf_1,3,89822.3968,-222.7136
