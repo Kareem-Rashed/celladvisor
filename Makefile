@@ -9,7 +9,7 @@ export HD_LIB
 
 GROUP ?= b3
 
-.PHONY: setup check test all demo clean aigs table1 hd-table contained-table liberty table5 new-cells cw-setup real-areas greedy docker-images check-cells real-cells real-cells-soft
+.PHONY: setup check test all demo clean aigs table1 hd-table contained-table liberty table5 new-cells cw-setup real-areas greedy docker-images check-cells real-cells real-cells-soft curve
 
 setup:            ## environment, and links to the PDK and the given files
 	ln -sfn $(PDK_ROOT)/sky130A pdk
@@ -119,3 +119,8 @@ real-cells-soft:  ## part of make all: runs the checks if Docker and the generat
 	else \
 		echo "SKIPPED check-cells: needs Docker and the cellweaver submodule (make cw-setup). Verdicts of the tagged run: results/real_cell_checks.csv"; \
 	fi
+
+curve: 
+	python3 -u src/curve.py estimated
+	python3 -u src/curve.py estimated_real
+	python3 -u src/curve.py real
