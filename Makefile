@@ -9,7 +9,7 @@ export HD_LIB
 
 GROUP ?= b3
 
-.PHONY: setup check test all demo clean aigs table1 hd-table contained-table liberty table5 new-cells cw-setup real-areas greedy docker-images check-cells real-cells real-cells-soft curve
+.PHONY: setup check test all demo clean aigs table1 hd-table contained-table liberty table5 new-cells cw-setup real-areas greedy docker-images check-cells real-cells real-cells-soft curve sensitivity
 
 setup:            ## environment, and links to the PDK and the given files
 	ln -sfn $(PDK_ROOT)/sky130A pdk
@@ -38,6 +38,7 @@ test:             ## every test, including the broken cases in tests/broken/
 	python3 tests/test_liberty_writer.py
 	python3 tests/test_cec.py
 	python3 tests/test_areamodel.py
+	python3 tests/test_sensitivity.py
 
 cuts:             ## step 2: cut counts for every design, before and after ABC
 	python3 src/run_cuts.py
@@ -45,7 +46,7 @@ cuts:             ## step 2: cut counts for every design, before and after ABC
 candidates:       ## steps 2, 3, 5: classes per design, frequency, Table 3 label
 	python3 src/candidates.py
 
-all: aigs table1 hd-table contained-table cuts candidates area-model rank liberty table5 greedy real-cells-soft
+all: aigs table1 hd-table contained-table cuts candidates area-model rank liberty table5 greedy sensitivity real-cells-soft
 
 
 aigs:             ## step 1: AIGs of every required design, raw / strash / after ABC
@@ -94,6 +95,9 @@ table5:           ## step 9: 24 mappings with cec -> Table 5
 greedy:           ## step 10: greedy selection on script B, on estimated and on real areas (about 15 minutes)
 	python3 -u src/greedy.py estimated > results/greedy_estimated.txt
 	python3 -u src/greedy.py real > results/greedy_real.txt
+
+sensitivity:      ## step 12: the first greedy cell 30% smaller in the Liberty, script B -> results/sensitivity.csv
+	python3 src/sensitivity.py
 
 cw-setup:         ## step 11, once: check out the cell generator and make its Python 3.12 environment (needs network)
 	git submodule update --init cellweaver
