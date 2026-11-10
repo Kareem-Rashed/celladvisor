@@ -8,7 +8,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from aig_reader import read_aag
 from cutter import enumerate_cuts
 
-DESIGNS = ["cpu8", "dsp8", "arlet6502", "uart_apb", "risc8", "fir10"]
+DESIGNS = ["cpu8", "dsp8", "arlet6502", "uart_apb", "risc8", "fir10", "spm", "mul"]
 GRAPHS = ["strash", "abc"]
 
 

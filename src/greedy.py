@@ -6,12 +6,17 @@ from collections import Counter
 from concurrent.futures import ProcessPoolExecutor
 
 sys.path.insert(0, "src")
-from table5 import DESIGNS, map_design
+from table5 import DESIGNS, design_file, map_design
 from liberty_writer import write_library, cells_from_ranked
 
 BASE_LIB = "given/hd_reduced.lib"
 MAX_CELLS = 10
 WORKERS = 4
+
+# table5.DESIGNS: the six required designs plus the SPM of Tutorial 4 and the
+# multiplier of Tutorial 2 (handout, section 3).
+# Each entry: (Verilog file, top module, short name).
+DESIGN_FILES = [(design_file(d), top, d) for d, top in DESIGNS]
 
 
 def count_cells(netlist):
@@ -28,10 +33,10 @@ def total_area(cells, tag, scripts="B"):
         write_library(BASE_LIB, cells, lib)
     total = 0.0
     used = Counter()
-    for design, top in DESIGNS:
+    for verilog, top, design in DESIGN_FILES:
         areas = []
         for script in scripts:
-            area = map_design(f"given/designs/{design}.v", top, lib, script,
+            area = map_design(verilog, top, lib, script,
                               f"{work}/{design}_{script}.v",
                               f"{work}/{design}_{script}.stat")
             areas.append(area)
@@ -42,7 +47,7 @@ def total_area(cells, tag, scripts="B"):
 
 def read_pool(mode):
     if mode == "estimated":
-        return cells_from_ranked("results/ranked.csv", 30, "b3")
+        return cells_from_ranked("results/ranked.csv", None, "b3")
     with open("results/real_areas.csv") as f:
         return [(r["name"], r["expression"], float(r["area_um2"]))
                 for r in csv.DictReader(f)]

@@ -3,7 +3,7 @@
 # ABC strash+dch) and record each graph's size in results/aig_sizes.csv.
 set -e
 
-DESIGNS="cpu8:cpu8 dsp8:dsp8 arlet6502:cpu uart_apb:uart_apb_master risc8:cpu fir10:fir10"
+DESIGNS="cpu8:cpu8 dsp8:dsp8 arlet6502:cpu uart_apb:uart_apb_master risc8:cpu fir10:fir10 spm:SPM mul:mul"
 OUT=build/aig
 CSV=results/aig_sizes.csv
 mkdir -p $OUT results
@@ -20,8 +20,11 @@ for pair in $DESIGNS; do
     design=${pair%%:*}
     top=${pair##*:}
     echo "$design"
+    # the Table 2 designs are in given/designs; SPM and the multiplier (Tutorials 4 and 2) in designs/
+    src=given/designs/$design.v
+    [ -f "$src" ] || src=designs/$design.v
 
-    yosys -q -p "read_verilog given/designs/$design.v; synth -flatten -top $top; async2sync; dffunmap; aigmap; write_aiger -ascii $OUT/${design}_raw.aag; write_aiger $OUT/${design}_raw.aig"
+    yosys -q -p "read_verilog $src; synth -flatten -top $top; async2sync; dffunmap; aigmap; write_aiger -ascii $OUT/${design}_raw.aag; write_aiger $OUT/${design}_raw.aig"
     yosys-abc -c "read_aiger $OUT/${design}_raw.aig; strash; write_aiger $OUT/${design}_strash.aig" > /dev/null
     yosys-abc -c "read_aiger $OUT/${design}_raw.aig; strash; dch; strash; write_aiger $OUT/${design}_abc.aig" > /dev/null
     to_ascii $OUT/${design}_strash

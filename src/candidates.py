@@ -12,7 +12,7 @@ from canon import canon_p, canon_pn, used_inputs
 from redundancy import Redundancy
 from areamodel import estimate_area
 
-DESIGNS = ["cpu8", "dsp8", "arlet6502", "uart_apb", "risc8", "fir10"]
+DESIGNS = ["cpu8", "dsp8", "arlet6502", "uart_apb", "risc8", "fir10", "spm", "mul"]
 GRAPHS = ["strash", "abc"]
 HD_LIB = os.environ.get(
     "HD_LIB",

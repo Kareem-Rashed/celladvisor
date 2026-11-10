@@ -37,7 +37,8 @@ import subprocess
 import sys
 
 DESIGNS = [("cpu8", "cpu8"), ("dsp8", "dsp8"), ("arlet6502", "cpu"),
-           ("uart_apb", "uart_apb_master"), ("risc8", "cpu"), ("fir10", "fir10")]
+           ("uart_apb", "uart_apb_master"), ("risc8", "cpu"), ("fir10", "fir10"),
+           ("spm", "SPM"), ("mul", "mul")]
 LIBS = {"baseline": "given/hd_reduced.lib", "extended": "libs/hd_extended.lib"}
 SCRIPTS = {"A": "+strash;dch,-f;amap;topo",
            "B": "+strash;&get,-n;&dch,-f;&nf,-R,1000;&put"}
@@ -102,13 +103,20 @@ def cec(ref_v, impl_v, top, lib, work):
     return "Networks are equivalent" in log, (lines or log.strip().splitlines())[-1].strip()
 
 
+def design_file(design):
+    """The Table 2 designs are in given/designs; SPM and the multiplier
+    (Tutorials 4 and 2) are in designs/."""
+    path = f"given/designs/{design}.v"
+    return path if os.path.exists(path) else f"designs/{design}.v"
+
+
 def one_run(design, top, lib_name, script):
     name = f"{design}_{lib_name}_{script}"
     lib = LIBS[lib_name]
     ref_v = f"{BUILD}/{name}_ref.v"
     out_v = f"{MAPPED}/{name}.v"
     stat = f"{BUILD}/{name}_stat.txt"
-    verilog = f"given/designs/{design}.v"
+    verilog = design_file(design)
     area = map_design(verilog, top, lib, script, out_v, stat)
     reference(verilog, top, lib, ref_v)
     used = new_cell_instances(out_v)

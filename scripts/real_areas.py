@@ -40,7 +40,7 @@ def read_report(out_dir):
         "backend": report.get("layout_backend", ""),
     }
 
-cells = cells_from_ranked("results/ranked.csv", 30, "b3")
+cells = cells_from_ranked("results/ranked.csv", None, "b3")
 
 rows = []
 for name, expression, estimated in cells:

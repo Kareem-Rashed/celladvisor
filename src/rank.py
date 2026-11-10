@@ -37,7 +37,7 @@ def hd_area(tt):
     return min(areas) if areas else None
 
 
-def top_candidates(n=30):
+def top_candidates(n=None): #takes all not 30
     rows = []
     with open("results/candidates_kept.csv") as f:
         for row in csv.DictReader(f):
