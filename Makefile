@@ -139,3 +139,5 @@ curve:
 	python3 -u src/curve.py estimated
 	python3 -u src/curve.py estimated_real
 	python3 -u src/curve.py real
+delays:           ## worst path delay of every mapped netlist with OpenSTA -> results/delays.csv (needs make docker-images)
+	python3 scripts/sta_delay.py

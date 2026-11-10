@@ -19,3 +19,19 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-ins
       python3-venv python3-pip && rm -rf /var/lib/apt/lists/*
 COPY requirements.lock /tmp/requirements.lock
 RUN python3 -m venv /opt/cwvenv && /opt/cwvenv/bin/pip install --no-cache-dir -r /tmp/requirements.lock
+
+# OpenSTA, for the worst delay of each mapped design (scripts/sta_delay.py).
+# It links the CUDD BDD package, which Ubuntu does not ship, so CUDD is built
+# first (autoreconf -fi: the checked-in build files ask for an old aclocal).
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
+      cmake swig libeigen3-dev zlib1g-dev libfl-dev libgtest-dev libreadline-dev \
+    && rm -rf /var/lib/apt/lists/*
+RUN git clone --depth 1 https://github.com/The-OpenROAD-Project/cudd.git /tmp/cudd \
+    && cd /tmp/cudd && autoreconf -fi \
+    && ./configure --prefix=/opt/cudd && make -j"$(nproc)" && make install \
+    && rm -rf /tmp/cudd
+RUN git clone --depth 1 https://github.com/The-OpenROAD-Project/OpenSTA.git /tmp/opensta \
+    && cd /tmp/opensta && mkdir build && cd build \
+    && cmake .. -DCMAKE_BUILD_TYPE=Release -DCUDD_DIR=/opt/cudd \
+    && make -j"$(nproc)" && make install \
+    && rm -rf /tmp/opensta
