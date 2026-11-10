@@ -1,0 +1,14 @@
+{
+  "request_id": "R-005",
+  "name": "dd2_gb3__c0aaf_1",
+  "inputs": [
+    "A",
+    "C",
+    "D"
+  ],
+  "output": "Y",
+  "expression": "(!C&!D) | (A&!D) | (A&!C)",
+  "truth_table": "0x2B",
+  "sizing": "hd",
+  "estimated_area_um2": 11.2608
+}

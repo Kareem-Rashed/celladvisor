@@ -1,0 +1,14 @@
+{
+  "request_id": "R-006",
+  "name": "dd2_gb3__caaee_1",
+  "inputs": [
+    "A",
+    "B",
+    "D"
+  ],
+  "output": "Y",
+  "expression": "A | (B&!D)",
+  "truth_table": "0xAE",
+  "sizing": "hd",
+  "estimated_area_um2": 8.7584
+}

@@ -1,0 +1,68 @@
+
+6. Printing statistics.
+
+=== fir10 ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+     3487        - wires
+     3649        - wire bits
+       25        - public wires
+      187        - public wire bits
+        5        - ports
+       27        - port bits
+     3638 2.78E+04 cells
+      160  1.4E+03   dd2_gb3__c000b_1
+      288 2.52E+03   dd2_gb3__c033f_1
+        1    10.01   dd2_gb3__c037f_1
+        5   43.792   dd2_gb3__c03ab_1
+       93 1.05E+03   dd2_gb3__c0aaf_1
+       17  127.622   dd2_gb3__c0aff_1
+        4   50.048   dd2_gb3__c2abf_1
+        2   17.517   dd2_gb3__caaee_1
+        1    7.507   sky130_fd_sc_hd__a21boi_1
+        7    52.55   sky130_fd_sc_hd__a21o_1
+      104  520.499   sky130_fd_sc_hd__a21oi_1
+       45  394.128   sky130_fd_sc_hd__a22o_1
+       32   240.23   sky130_fd_sc_hd__a22oi_1
+        4   35.034   sky130_fd_sc_hd__a2bb2oi_1
+        3   26.275   sky130_fd_sc_hd__a31o_1
+        5    31.28   sky130_fd_sc_hd__a31oi_1
+        1    10.01   sky130_fd_sc_hd__a32o_1
+        2   17.517   sky130_fd_sc_hd__a32oi_1
+       39  243.984   sky130_fd_sc_hd__and2_1
+       15    93.84   sky130_fd_sc_hd__and3_1
+        1    8.758   sky130_fd_sc_hd__and3b_1
+        1    8.758   sky130_fd_sc_hd__and4_1
+      176 3.52E+03   sky130_fd_sc_hd__dfxtp_1
+       52  195.187   sky130_fd_sc_hd__inv_1
+       43  430.413   sky130_fd_sc_hd__maj3_1
+      629 2.36E+03   sky130_fd_sc_hd__nand2_1
+       19  118.864   sky130_fd_sc_hd__nand2b_1
+       27   135.13   sky130_fd_sc_hd__nand3_1
+       49  306.544   sky130_fd_sc_hd__nand4_1
+      340 1.28E+03   sky130_fd_sc_hd__nor2_1
+       29  181.424   sky130_fd_sc_hd__nor2b_1
+        8   40.038   sky130_fd_sc_hd__nor3_1
+        2   15.014   sky130_fd_sc_hd__nor3b_1
+        1    6.256   sky130_fd_sc_hd__nor4_1
+        1    10.01   sky130_fd_sc_hd__nor4bb_1
+        3   22.522   sky130_fd_sc_hd__o21a_1
+       62  310.298   sky130_fd_sc_hd__o21ai_1
+        1    7.507   sky130_fd_sc_hd__o21bai_1
+        4   25.024   sky130_fd_sc_hd__o22ai_1
+        1    8.758   sky130_fd_sc_hd__o2bb2ai_1
+        2   15.014   sky130_fd_sc_hd__o31ai_1
+        1    10.01   sky130_fd_sc_hd__o32a_1
+        1    8.758   sky130_fd_sc_hd__o32ai_1
+        3   18.768   sky130_fd_sc_hd__or2_1
+        1    6.256   sky130_fd_sc_hd__or3_1
+      885 7.75E+03   sky130_fd_sc_hd__xnor2_1
+      468  4.1E+03   sky130_fd_sc_hd__xor2_1
+
+   Chip area for module '\fir10': 27792.905600
+     of which used for sequential elements: 3523.379200 (12.68%)
+
+
+cec: Networks are equivalent.  Time =     0.31 sec

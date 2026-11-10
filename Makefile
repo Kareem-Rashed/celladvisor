@@ -46,7 +46,7 @@ cuts:             ## step 2: cut counts for every design, before and after ABC
 candidates:       ## steps 2, 3, 5: classes per design, frequency, Table 3 label
 	python3 src/candidates.py
 
-all: aigs table1 hd-table contained-table cuts candidates area-model rank liberty table5 greedy sensitivity real-cells-soft
+all: aigs table1 hd-table contained-table cuts candidates area-model rank liberty table5 greedy table5-final real-cells-soft curve sensitivity
 
 
 aigs:             ## step 1: AIGs of every required design, raw / strash / after ABC
@@ -55,9 +55,12 @@ aigs:             ## step 1: AIGs of every required design, raw / strash / after
 table1:           ## handout Table 1: areas on the usable and reduced libraries
 	bash scripts/table1.sh
 
-demo:             ## what the interview runs: make demo IN=<request or design>
-	@test -n "$(IN)" || (echo "usage: make demo IN=<request or design>" && exit 1)
-	@echo "not written yet" && exit 1
+TOP ?=
+SV  ?=
+
+demo:             ## what the interview runs: make demo IN=<design.v> [TOP=<module>] [SV=1]
+	@test -n "$(IN)" || (echo "usage: make demo IN=<design.v> [TOP=<module>] [SV=1]" && exit 1)
+	python3 src/demo.py "$(IN)" "$(TOP)" "$(SV)"
 
 clean:
 	rm -rf build
@@ -103,9 +106,8 @@ table5-real:      ## Table 5 for the final greedy cells, real areas -> results/f
 	python3 src/check_liberty.py libs/hd_final_real.lib 199
 	python3 src/table5.py libs/hd_final_real.lib results/final_real
 
-greedy:           ## step 10: greedy selection on script B, on estimated and on real areas (about 15 minutes)
+greedy:           ## step 10: greedy selection on script B, estimated areas, 8 designs, all ranked classes (about an hour)
 	python3 -u src/greedy.py estimated > results/greedy_estimated.txt
-	python3 -u src/greedy.py real > results/greedy_real.txt
 
 sensitivity:      ## step 12: the first greedy cell 30% smaller in the Liberty, script B -> results/sensitivity.csv
 	python3 src/sensitivity.py
@@ -128,16 +130,25 @@ check-cells:      ## step 11: the generator's own checks (DRC, LVS, simulation) 
 real-cells:       ## step 11 in full, from nothing: generator, real areas, images, checks
 	$(MAKE) cw-setup real-areas docker-images check-cells
 
-real-cells-soft:  ## part of make all: runs the checks if Docker and the generator are there, otherwise says it skipped them
-	@if docker info >/dev/null 2>&1 && [ -d cellweaver/scl_gen ]; then \
-		$(MAKE) docker-images check-cells; \
+real-areas-final: ## step 11: real areas of the final cells only (seconds) -> results/real_areas.csv (needs make cw-setup)
+	python3 scripts/real_areas.py libs/final_estimated.csv
+
+delays-final:     ## worst delay of the final netlists with OpenSTA -> results/delays_final_*.csv (needs make docker-images and the Table 5 targets)
+	python3 scripts/sta_delay.py --dir results/final_estimated/mapped --extended-lib libs/hd_final_estimated.lib --out results/delays_final_estimated.csv
+	python3 scripts/sta_delay.py --dir results/final_real/mapped --extended-lib libs/hd_final_real.lib --out results/delays_final_real.csv
+
+real-cells-soft:  ## part of make all: the steps that need Docker and the cell generator, or a message that they were skipped
+	@if docker info >/dev/null 2>&1 && [ -x build/cwvenv/bin/python ] && [ -d cellweaver/scl_gen ]; then \
+		$(MAKE) real-areas-final docker-images check-cells table5-real delays-final; \
 	else \
-		echo "SKIPPED check-cells: needs Docker and the cellweaver submodule (make cw-setup). Verdicts of the tagged run: results/real_cell_checks.csv"; \
+		echo "SKIPPED real-areas-final, check-cells, table5-real, delays-final: need Docker and the cell generator (make cw-setup). Results of the tagged run: results/real_areas.csv, real_cell_checks.csv, final_real/, delays_final_*.csv"; \
 	fi
 
-curve: 
-	python3 -u src/curve.py estimated
-	python3 -u src/curve.py estimated_real
-	python3 -u src/curve.py real
-delays:           ## worst path delay of every mapped netlist with OpenSTA -> results/delays.csv (needs make docker-images)
+PLOTPY := $(shell if [ -x build/cwvenv/bin/python ]; then echo build/cwvenv/bin/python; else echo python3; fi)
+
+curve:            ## cell-by-cell curve, estimated areas and with the real areas of the final cells -> results/curve_*.csv, .png
+	$(PLOTPY) -u src/curve.py estimated
+	-$(PLOTPY) -u src/curve.py estimated_real
+
+delays:           ## worst path delay of CP2's mapped netlists with OpenSTA -> results/delays.csv (needs make docker-images)
 	python3 scripts/sta_delay.py

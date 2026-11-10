@@ -1,0 +1,15 @@
+{
+  "request_id": "R-007",
+  "name": "dd2_gb3__c037f_1",
+  "inputs": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "output": "Y",
+  "expression": "(!C&!D) | (!B&!D) | (!B&!C) | (!A&!D)",
+  "truth_table": "0x037F",
+  "sizing": "hd",
+  "estimated_area_um2": 10.0096
+}
